@@ -1,0 +1,10 @@
+[
+{"id":"kissaten","name":"Japanese Kissaten","ko":"느린 다방의 시간","tags":["향수 어린","따뜻한","고요한"],"options":["8_0","11_1","6_1"],"query":"Japanese kissaten vintage coffee interior","image":"11_1"},
+{"id":"academia","name":"Dark Academia","ko":"오래된 책과 깊은 빛","tags":["향수 어린","고요한","정갈한"],"options":["3_4","10_3","10_5","5_3"],"query":"dark academia library warm wood aesthetic","image":"10_3"},
+{"id":"japandi","name":"Japandi","ko":"자연과 여백의 균형","tags":["정갈한","자연적인","고요한"],"options":["11_0","11_3","11_6","10_0"],"query":"japandi natural materials quiet interior","image":"11_6"},
+{"id":"slowcoast","name":"Slow Coastal","ko":"바다를 닮은 느긋함","tags":["자연적인","고요한","따뜻한"],"options":["3_1","7_3","9_7","10_0"],"query":"slow coastal linen sea light aesthetic","image":"3_1"},
+{"id":"neonnoir","name":"Neon Noir","ko":"네온이 번지는 도시의 밤","tags":["도시적인","선명한","몽환적인"],"options":["6_2","0_7","8_6"],"query":"neon noir rainy city night photography","image":"6_2"},
+{"id":"cottage","name":"Quiet Cottage","ko":"풀과 나무 사이의 일상","tags":["자연적인","향수 어린","따뜻한"],"options":["3_5","9_0","10_5","8_7"],"query":"quiet cottage wildflower wood countryside aesthetic","image":"3_5"},
+{"id":"softfuture","name":"Soft Futurism","ko":"차가운 소재의 부드러운 빛","tags":["도시적인","몽환적인","정갈한"],"options":["11_5","10_2","10_6","8_2"],"query":"soft futurism chrome glass ambient interior","image":"11_5"},
+{"id":"sunboho","name":"Sunlit Bohemian","ko":"색과 질감이 겹치는 오후","tags":["선명한","따뜻한","자연적인"],"options":["11_4","11_7","5_2","4_5"],"query":"sunlit bohemian colorful textured interior","image":"11_4"}
+]

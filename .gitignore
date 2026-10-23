@@ -1,0 +1,10 @@
+dist/
+site.tar.gz
+worker/index.js
+image-sources.json
+image-manifest.json
+.env
+.env.*
+!.env.example
+.dev.vars
+node_modules/
