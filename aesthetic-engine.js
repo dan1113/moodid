@@ -21,9 +21,13 @@ function synthesizeSenses(items){
  const nouns={'고요한':'고요함','따뜻한':'온기','몽환적인':'몽환성','향수 어린':'시간의 깊이','자연적인':'자연의 결','도시적인':'도시의 리듬','정갈한':'정돈된 여백','선명한':'선명한 생동감'},top=Object.keys(weights).sort((a,b)=>weights[b]-weights[a]).slice(0,2);
  return {title:top.map(t=>nouns[t]||t).join(' · ')+'의 어우러짐',text:`선택한 감각 전반에는 ‘${top.map(t=>nouns[t]||t).join(' · ')}’이라는 결이 흐릅니다. ‘${pick('날씨')}’의 공기, ‘${pick('빛')}’에서 느껴지는 빛, ‘${pick('질감')}’의 표면이 하나의 장면에 겹쳐져요. ‘${pick('음악')}’의 리듬과 ‘${pick('향')}’의 잔향이 더해지면, 눈에 보이는 색과 손끝의 촉감, 공간의 분위기가 따로 떨어지지 않고 하나의 세계로 느껴집니다.`};
 }
-function matchCuriosityPins(queries,items){
- const used=new Set(),ranked=rankCatalog(PIN_CATALOG,items),allOptions=DB.flatMap(d=>d.options);
- return queries.map((q,i)=>{const text=(q.title+' '+q.query).toLowerCase();const kind=/interior|room|space|공간|실내|인테리어/.test(text)?'space':/landscape|forest|scenery|nature|풍경|숲|자연/.test(text)?'scenery':'atmosphere';
- const scored=ranked.filter(p=>!used.has(p.id)).map(p=>{const words=p.options.flatMap(id=>{const o=allOptions.find(x=>x.id===id);return o?[o.name,...o.en.toLowerCase().split(' ')]:[]}).filter(w=>w.length>2);return {...p,queryScore:p.score+(p.kind===kind?12:0)+words.filter(w=>text.includes(w.toLowerCase())).length*5}}).sort((a,b)=>b.queryScore-a.queryScore);
- const pin=scored[0]||ranked[i%ranked.length];used.add(pin.id);return pin;});
+function normalizeExplorations(queries){
+ const used=new Set();return (Array.isArray(queries)?queries:[]).slice(0,6).flatMap(q=>{
+ if(!q||typeof q.query!=='string'||typeof q.title!=='string')return [];
+ const pin=PIN_CATALOG.find(p=>p.id===q.pinId);
+ if(pin){if(used.has(pin.id))return [];used.add(pin.id);return [{pinId:pin.id,title:pin.title,query:pin.query,reason:typeof q.reason==='string'?q.reason.slice(0,240):''}];}
+ return [{pinId:null,title:q.title.slice(0,100),query:q.query.slice(0,200),reason:''}];
+ });
 }
+function fallbackExplorations(items){return rankCatalog(PIN_CATALOG,items).slice(0,6).map(p=>({pinId:p.id,title:p.title,query:p.query,reason:''}));}
+function matchCuriosityPins(queries){return queries.map(q=>PIN_CATALOG.find(p=>p.id===q.pinId)||null);}

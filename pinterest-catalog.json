@@ -13,7 +13,8 @@
       "3_0",
       "1_7"
     ],
-    "source": "https://in.pinterest.com/pin/misty-forest-landscape-photography--11470174040407333/"
+    "source": "https://in.pinterest.com/pin/misty-forest-landscape-photography--11470174040407333/",
+    "query": "misty forest landscape"
   },
   {
     "id": "57069120276611036",
@@ -29,7 +30,8 @@
       "2_1",
       "1_5"
     ],
-    "source": "https://kr.pinterest.com/pin/57069120276611036/"
+    "source": "https://kr.pinterest.com/pin/57069120276611036/",
+    "query": "misty autumn landscape"
   },
   {
     "id": "1138918193260926339",
@@ -45,7 +47,8 @@
       "11_0",
       "2_1"
     ],
-    "source": "https://in.pinterest.com/pin/serene-minimalist-bedroom-with-misty-forest-view-tranquil-ambiance-in-2024--1138918193260926339/"
+    "source": "https://in.pinterest.com/pin/serene-minimalist-bedroom-with-misty-forest-view-tranquil-ambiance-in-2024--1138918193260926339/",
+    "query": "minimal bedroom forest view"
   },
   {
     "id": "805933295834410006",
@@ -62,7 +65,8 @@
       "6_4",
       "4_2"
     ],
-    "source": "https://de.pinterest.com/pin/805933295834410006/"
+    "source": "https://de.pinterest.com/pin/805933295834410006/",
+    "query": "natural light minimalist interior"
   },
   {
     "id": "470204017322192709",
@@ -78,7 +82,8 @@
       "11_4",
       "10_5"
     ],
-    "source": "https://se.pinterest.com/pin/bohemian-vintage-interior-tips--470204017322192709/"
+    "source": "https://se.pinterest.com/pin/bohemian-vintage-interior-tips--470204017322192709/",
+    "query": "bohemian vintage interior"
   },
   {
     "id": "543880092507274236",
@@ -94,7 +99,8 @@
       "11_7",
       "5_2"
     ],
-    "source": "https://at.pinterest.com/pin/543880092507274236/"
+    "source": "https://at.pinterest.com/pin/543880092507274236/",
+    "query": "colorful bohemian interior"
   },
   {
     "id": "53550683061659941",
@@ -111,7 +117,8 @@
       "10_5",
       "5_3"
     ],
-    "source": "https://www.pinterest.com/pin/a-cozy-dark-academia-library--53550683061659941/"
+    "source": "https://www.pinterest.com/pin/a-cozy-dark-academia-library--53550683061659941/",
+    "query": "cozy dark academia library fireplace"
   },
   {
     "id": "591730838577264822",
@@ -127,7 +134,8 @@
       "11_1",
       "6_1"
     ],
-    "source": "https://au.pinterest.com/pin/591730838577264822/"
+    "source": "https://au.pinterest.com/pin/591730838577264822/",
+    "query": "Japanese kissaten vintage cafe"
   },
   {
     "id": "607141593493982181",
@@ -144,7 +152,8 @@
       "0_6",
       "0_7"
     ],
-    "source": "https://ar.pinterest.com/pin/607141593493982181/"
+    "source": "https://ar.pinterest.com/pin/607141593493982181/",
+    "query": "Seoul neon night street"
   },
   {
     "id": "554365035379799804",
@@ -160,11 +169,12 @@
       "7_6",
       "0_7"
     ],
-    "source": "https://www.pinterest.com/pin/554365035379799804/"
+    "source": "https://www.pinterest.com/pin/554365035379799804/",
+    "query": "night street photography"
   },
   {
     "id": "772156298635309437",
-    "title": "비 오는 날의 따뜻한 은신처",
+    "title": "나무와 따뜻한 조명이 감싸는 침실",
     "kind": "atmosphere",
     "tags": [
       "따뜻한",
@@ -178,7 +188,8 @@
       "7_0",
       "6_1"
     ],
-    "source": "https://in.pinterest.com/pin/772156298635309437/"
+    "source": "https://in.pinterest.com/pin/772156298635309437/",
+    "query": "cozy forest view bedroom warm lighting"
   },
   {
     "id": "301107925085687100",
@@ -194,7 +205,8 @@
       "6_1",
       "5_3"
     ],
-    "source": "https://ch.pinterest.com/pin/301107925085687100/"
+    "source": "https://ch.pinterest.com/pin/301107925085687100/",
+    "query": "jazz bar interior"
   },
   {
     "id": "7599893116187101",
@@ -210,7 +222,8 @@
       "2_4",
       "6_7"
     ],
-    "source": "https://www.pinterest.com/pin/misty-foggy-forest-fir-mountains-natural-mist-landscape-dark-woods-view-mystery-clou--7599893116187101/"
+    "source": "https://www.pinterest.com/pin/misty-foggy-forest-fir-mountains-natural-mist-landscape-dark-woods-view-mystery-clou--7599893116187101/",
+    "query": "misty mountain forest landscape"
   },
   {
     "id": "320740804717739081",
@@ -226,7 +239,8 @@
       "11_7",
       "11_4"
     ],
-    "source": "https://www.pinterest.com/pin/320740804717739081/"
+    "source": "https://www.pinterest.com/pin/320740804717739081/",
+    "query": "vintage neon interior"
   },
   {
     "id": "137289488885472695",
@@ -243,6 +257,7 @@
       "5_0",
       "4_2"
     ],
-    "source": "https://nl.pinterest.com/pin/137289488885472695/"
+    "source": "https://nl.pinterest.com/pin/137289488885472695/",
+    "query": "minimal room sunlight shadows"
   }
 ]
