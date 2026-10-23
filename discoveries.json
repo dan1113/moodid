@@ -1,10 +1,1219 @@
 [
-{"id":"kissaten","name":"Japanese Kissaten","ko":"느린 다방의 시간","tags":["향수 어린","따뜻한","고요한"],"options":["8_0","11_1","6_1"],"query":"Japanese kissaten vintage coffee interior","image":"11_1"},
-{"id":"academia","name":"Dark Academia","ko":"오래된 책과 깊은 빛","tags":["향수 어린","고요한","정갈한"],"options":["3_4","10_3","10_5","5_3"],"query":"dark academia library warm wood aesthetic","image":"10_3"},
-{"id":"japandi","name":"Japandi","ko":"자연과 여백의 균형","tags":["정갈한","자연적인","고요한"],"options":["11_0","11_3","11_6","10_0"],"query":"japandi natural materials quiet interior","image":"11_6"},
-{"id":"slowcoast","name":"Slow Coastal","ko":"바다를 닮은 느긋함","tags":["자연적인","고요한","따뜻한"],"options":["3_1","7_3","9_7","10_0"],"query":"slow coastal linen sea light aesthetic","image":"3_1"},
-{"id":"neonnoir","name":"Neon Noir","ko":"네온이 번지는 도시의 밤","tags":["도시적인","선명한","몽환적인"],"options":["6_2","0_7","8_6"],"query":"neon noir rainy city night photography","image":"6_2"},
-{"id":"cottage","name":"Quiet Cottage","ko":"풀과 나무 사이의 일상","tags":["자연적인","향수 어린","따뜻한"],"options":["3_5","9_0","10_5","8_7"],"query":"quiet cottage wildflower wood countryside aesthetic","image":"3_5"},
-{"id":"softfuture","name":"Soft Futurism","ko":"차가운 소재의 부드러운 빛","tags":["도시적인","몽환적인","정갈한"],"options":["11_5","10_2","10_6","8_2"],"query":"soft futurism chrome glass ambient interior","image":"11_5"},
-{"id":"sunboho","name":"Sunlit Bohemian","ko":"색과 질감이 겹치는 오후","tags":["선명한","따뜻한","자연적인"],"options":["11_4","11_7","5_2","4_5"],"query":"sunlit bohemian colorful textured interior","image":"11_4"}
+  {
+    "id": "kissaten",
+    "name": "Japanese Kissaten",
+    "ko": "느린 다방의 시간",
+    "tags": [
+      "향수 어린",
+      "따뜻한",
+      "고요한"
+    ],
+    "options": [
+      "8_0",
+      "11_1",
+      "6_1"
+    ],
+    "query": "Japanese kissaten vintage coffee interior",
+    "image": "11_1",
+    "requiredGroups": [
+      [
+        "8_0"
+      ],
+      [
+        "11_1"
+      ],
+      [
+        "6_1"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "academia",
+    "name": "Dark Academia",
+    "ko": "오래된 책과 깊은 빛",
+    "tags": [
+      "향수 어린",
+      "고요한",
+      "정갈한"
+    ],
+    "options": [
+      "3_4",
+      "10_3",
+      "10_5",
+      "5_3"
+    ],
+    "query": "dark academia library warm wood aesthetic",
+    "image": "10_3",
+    "requiredGroups": [
+      [
+        "3_4"
+      ],
+      [
+        "10_3"
+      ],
+      [
+        "10_5"
+      ],
+      [
+        "5_3"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "japandi",
+    "name": "Japandi",
+    "ko": "자연과 여백의 균형",
+    "tags": [
+      "정갈한",
+      "자연적인",
+      "고요한"
+    ],
+    "options": [
+      "11_0",
+      "11_3",
+      "11_6",
+      "10_0"
+    ],
+    "query": "japandi natural materials quiet interior",
+    "image": "11_6",
+    "requiredGroups": [
+      [
+        "11_0"
+      ],
+      [
+        "11_3"
+      ],
+      [
+        "11_6"
+      ],
+      [
+        "10_0"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "slowcoast",
+    "name": "Slow Coastal",
+    "ko": "바다를 닮은 느긋함",
+    "tags": [
+      "자연적인",
+      "고요한",
+      "따뜻한"
+    ],
+    "options": [
+      "3_1",
+      "7_3",
+      "9_7",
+      "10_0"
+    ],
+    "query": "slow coastal linen sea light aesthetic",
+    "image": "3_1",
+    "requiredGroups": [
+      [
+        "3_1"
+      ],
+      [
+        "7_3"
+      ],
+      [
+        "9_7"
+      ],
+      [
+        "10_0"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "neonnoir",
+    "name": "Neon Noir",
+    "ko": "네온이 번지는 도시의 밤",
+    "tags": [
+      "도시적인",
+      "선명한",
+      "몽환적인"
+    ],
+    "options": [
+      "6_2",
+      "0_7",
+      "8_6"
+    ],
+    "query": "neon noir rainy city night photography",
+    "image": "6_2",
+    "requiredGroups": [
+      [
+        "6_2"
+      ],
+      [
+        "0_7"
+      ],
+      [
+        "8_6"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "cottage",
+    "name": "Quiet Cottage",
+    "ko": "풀과 나무 사이의 일상",
+    "tags": [
+      "자연적인",
+      "향수 어린",
+      "따뜻한"
+    ],
+    "options": [
+      "3_5",
+      "9_0",
+      "10_5",
+      "8_7"
+    ],
+    "query": "quiet cottage wildflower wood countryside aesthetic",
+    "image": "3_5",
+    "requiredGroups": [
+      [
+        "3_5"
+      ],
+      [
+        "9_0"
+      ],
+      [
+        "10_5"
+      ],
+      [
+        "8_7"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "softfuture",
+    "name": "Soft Futurism",
+    "ko": "차가운 소재의 부드러운 빛",
+    "tags": [
+      "도시적인",
+      "몽환적인",
+      "정갈한"
+    ],
+    "options": [
+      "11_5",
+      "10_2",
+      "10_6",
+      "8_2"
+    ],
+    "query": "soft futurism chrome glass ambient interior",
+    "image": "11_5",
+    "requiredGroups": [
+      [
+        "11_5"
+      ],
+      [
+        "10_2"
+      ],
+      [
+        "10_6"
+      ],
+      [
+        "8_2"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "sunboho",
+    "name": "Sunlit Bohemian",
+    "ko": "색과 질감이 겹치는 오후",
+    "tags": [
+      "선명한",
+      "따뜻한",
+      "자연적인"
+    ],
+    "options": [
+      "11_4",
+      "11_7",
+      "5_2",
+      "4_5"
+    ],
+    "query": "sunlit bohemian colorful textured interior",
+    "image": "11_4",
+    "requiredGroups": [
+      [
+        "11_4"
+      ],
+      [
+        "11_7"
+      ],
+      [
+        "5_2"
+      ],
+      [
+        "4_5"
+      ]
+    ],
+    "minGroups": 1
+  },
+  {
+    "id": "mistwoods",
+    "name": "안개가 내려앉은 숲",
+    "ko": "옅은 안개 · 깊은 숲 · 흐린 날 확산광의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "몽환적인",
+      "고요한",
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "2_1",
+      "3_0",
+      "6_7"
+    ],
+    "query": "misty forest diffused light photography",
+    "image": "3_0",
+    "requiredGroups": [
+      [
+        "2_1"
+      ],
+      [
+        "3_0"
+      ],
+      [
+        "6_7"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "winterlake",
+    "name": "눈과 호수의 고요",
+    "ko": "한겨울 · 소복한 눈 · 호숫가의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "정갈한",
+      "고요한",
+      "몽환적인"
+    ],
+    "options": [
+      "1_7",
+      "2_5",
+      "3_6"
+    ],
+    "query": "snowy winter lake quiet photography",
+    "image": "3_6",
+    "requiredGroups": [
+      [
+        "1_7"
+      ],
+      [
+        "2_5"
+      ],
+      [
+        "3_6"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "coastlinen",
+    "name": "파도와 린넨의 여백",
+    "ko": "잔잔한 바다 · 잔잔한 파도 · 바스락한 린넨의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "고요한",
+      "몽환적인",
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "3_1",
+      "7_3",
+      "10_0"
+    ],
+    "query": "coastal linen natural light interior",
+    "image": "10_0",
+    "requiredGroups": [
+      [
+        "3_1"
+      ],
+      [
+        "7_3"
+      ],
+      [
+        "10_0"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "bluecity",
+    "name": "푸른 시간이 머무는 도시",
+    "ko": "블루 아워 · 도시의 옥상 · 네이비의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "몽환적인",
+      "고요한",
+      "도시적인",
+      "선명한"
+    ],
+    "options": [
+      "0_6",
+      "3_3",
+      "4_0"
+    ],
+    "query": "blue hour city rooftop photography",
+    "image": "0_6",
+    "requiredGroups": [
+      [
+        "0_6"
+      ],
+      [
+        "3_3"
+      ],
+      [
+        "4_0"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "neonrain",
+    "name": "비에 번지는 네온",
+    "ko": "보슬비/장대비 · 네온사인 · 자정의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "고요한",
+      "몽환적인",
+      "도시적인",
+      "선명한"
+    ],
+    "options": [
+      "2_2",
+      "2_3",
+      "6_2",
+      "0_7"
+    ],
+    "query": "rainy neon city night photography",
+    "image": "6_2",
+    "requiredGroups": [
+      [
+        "2_2",
+        "2_3"
+      ],
+      [
+        "6_2"
+      ],
+      [
+        "0_7"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "warmbooks",
+    "name": "책과 조명의 깊은 온기",
+    "ko": "작은 도서관 · 따뜻한 간접조명 · 오래된 종이/결이 있는 나무의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "정갈한",
+      "고요한",
+      "따뜻한",
+      "향수 어린",
+      "자연적인"
+    ],
+    "options": [
+      "3_4",
+      "6_1",
+      "10_3",
+      "10_5"
+    ],
+    "query": "warm lighting vintage library wood interior",
+    "image": "3_4",
+    "requiredGroups": [
+      [
+        "3_4"
+      ],
+      [
+        "6_1"
+      ],
+      [
+        "10_3",
+        "10_5"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "sunminimal",
+    "name": "햇빛과 정돈된 여백",
+    "ko": "여백 있는 미니멀 · 창문 사이 햇살 · 아이보리의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "정갈한",
+      "고요한",
+      "선명한",
+      "도시적인"
+    ],
+    "options": [
+      "11_0",
+      "6_4",
+      "4_2"
+    ],
+    "query": "sunlight minimalist ivory interior",
+    "image": "11_0",
+    "requiredGroups": [
+      [
+        "11_0"
+      ],
+      [
+        "6_4"
+      ],
+      [
+        "4_2"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "candlevelvet",
+    "name": "촛불 아래 벨벳",
+    "ko": "촛불 · 부드러운 벨벳 · 버건디의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "따뜻한",
+      "향수 어린",
+      "몽환적인",
+      "고요한"
+    ],
+    "options": [
+      "6_3",
+      "10_4",
+      "4_1"
+    ],
+    "query": "candlelight velvet burgundy interior",
+    "image": "6_3",
+    "requiredGroups": [
+      [
+        "6_3"
+      ],
+      [
+        "10_4"
+      ],
+      [
+        "4_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "olivewood",
+    "name": "올리브와 나무의 결",
+    "ko": "올리브 · 결이 있는 나무 · 편안한 내추럴의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "4_3",
+      "10_5",
+      "11_3"
+    ],
+    "query": "olive wood natural interior earthy",
+    "image": "10_5",
+    "requiredGroups": [
+      [
+        "4_3"
+      ],
+      [
+        "10_5"
+      ],
+      [
+        "11_3"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "lavenderdream",
+    "name": "라벤더빛 몽환의 장면",
+    "ko": "라벤더 · 몽환적인 드림팝 · 파스텔의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "몽환적인",
+      "고요한"
+    ],
+    "options": [
+      "4_6",
+      "8_5",
+      "5_0"
+    ],
+    "query": "lavender dream pop ethereal moodboard",
+    "image": "4_6",
+    "requiredGroups": [
+      [
+        "4_6"
+      ],
+      [
+        "8_5"
+      ],
+      [
+        "5_0"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "chromeambient",
+    "name": "금속과 앰비언트의 공간",
+    "ko": "차가운 금속 · 반짝이는 퓨처리즘 · 공간을 채우는 앰비언트의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "도시적인",
+      "선명한",
+      "몽환적인",
+      "고요한"
+    ],
+    "options": [
+      "10_6",
+      "11_5",
+      "8_2"
+    ],
+    "query": "chrome futuristic ambient light interior",
+    "image": "11_5",
+    "requiredGroups": [
+      [
+        "10_6"
+      ],
+      [
+        "11_5"
+      ],
+      [
+        "8_2"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "concretesilence",
+    "name": "콘크리트와 고요한 구조",
+    "ko": "거친 콘크리트 · 묵직한 브루탈리즘 · 모노톤의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "도시적인",
+      "선명한",
+      "정갈한",
+      "고요한"
+    ],
+    "options": [
+      "10_1",
+      "11_2",
+      "5_4"
+    ],
+    "query": "brutalist concrete monochrome architecture",
+    "image": "11_2",
+    "requiredGroups": [
+      [
+        "10_1"
+      ],
+      [
+        "11_2"
+      ],
+      [
+        "5_4"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "springmeadow",
+    "name": "초봄 들판의 빛",
+    "ko": "초봄 · 들판 · 아침 자연광의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "몽환적인",
+      "고요한",
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "1_0",
+      "3_5",
+      "6_0"
+    ],
+    "query": "early spring meadow soft sunlight",
+    "image": "3_5",
+    "requiredGroups": [
+      [
+        "1_0"
+      ],
+      [
+        "3_5"
+      ],
+      [
+        "6_0"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "summersea",
+    "name": "한여름 바다의 선명함",
+    "ko": "한여름 · 잔잔한 바다 · 코발트의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "선명한",
+      "도시적인",
+      "고요한",
+      "몽환적인"
+    ],
+    "options": [
+      "1_3",
+      "3_1",
+      "4_4"
+    ],
+    "query": "summer ocean cobalt clear sky photography",
+    "image": "3_1",
+    "requiredGroups": [
+      [
+        "1_3"
+      ],
+      [
+        "3_1"
+      ],
+      [
+        "4_4"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "autumnpaper",
+    "name": "가을과 오래된 종이",
+    "ko": "늦가을 · 오래된 종이 · 먼지 낀 뮤트의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "향수 어린",
+      "따뜻한",
+      "고요한",
+      "몽환적인"
+    ],
+    "options": [
+      "1_6",
+      "10_3",
+      "5_1"
+    ],
+    "query": "autumn aged paper muted still life",
+    "image": "10_3",
+    "requiredGroups": [
+      [
+        "1_6"
+      ],
+      [
+        "10_3"
+      ],
+      [
+        "5_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "nighttrain",
+    "name": "심야 열차의 리듬",
+    "ko": "자정 · 지하철역 · 달리는 열차의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "도시적인",
+      "선명한",
+      "향수 어린",
+      "따뜻한"
+    ],
+    "options": [
+      "0_7",
+      "3_7",
+      "7_2"
+    ],
+    "query": "midnight train station cinematic photography",
+    "image": "3_7",
+    "requiredGroups": [
+      [
+        "0_7"
+      ],
+      [
+        "3_7"
+      ],
+      [
+        "7_2"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "kissatenroom",
+    "name": "재즈와 빈티지의 느린 시간",
+    "ko": "느긋한 재즈 · 시간이 쌓인 빈티지 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "따뜻한",
+      "향수 어린"
+    ],
+    "options": [
+      "8_0",
+      "11_1",
+      "6_1"
+    ],
+    "query": "japanese kissaten jazz vintage interior",
+    "image": "11_1",
+    "requiredGroups": [
+      [
+        "8_0"
+      ],
+      [
+        "11_1"
+      ],
+      [
+        "6_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "japanlinen",
+    "name": "린넨과 일본식 여백",
+    "ko": "정갈한 일본식 · 바스락한 린넨 · 여백 있는 미니멀의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "고요한",
+      "몽환적인",
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "11_6",
+      "10_0",
+      "11_0"
+    ],
+    "query": "japanese minimalist linen natural interior",
+    "image": "11_6",
+    "requiredGroups": [
+      [
+        "11_6"
+      ],
+      [
+        "10_0"
+      ],
+      [
+        "11_0"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "earthboho",
+    "name": "흙빛 보헤미안의 질감",
+    "ko": "자유로운 보헤미안 · 흙빛 · 테라코타의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "몽환적인",
+      "고요한",
+      "자연적인",
+      "정갈한",
+      "따뜻한",
+      "향수 어린"
+    ],
+    "options": [
+      "11_4",
+      "5_6",
+      "4_5"
+    ],
+    "query": "earthy terracotta bohemian textured interior",
+    "image": "11_4",
+    "requiredGroups": [
+      [
+        "11_4"
+      ],
+      [
+        "5_6"
+      ],
+      [
+        "4_5"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "vividmax",
+    "name": "색이 겹치는 맥시멀",
+    "ko": "풍성한 맥시멀 · 선명한 비비드 · 코발트/테라코타의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "선명한",
+      "도시적인",
+      "따뜻한",
+      "향수 어린"
+    ],
+    "options": [
+      "11_7",
+      "5_2",
+      "4_4",
+      "4_5"
+    ],
+    "query": "vivid colorful maximalist interior",
+    "image": "11_7",
+    "requiredGroups": [
+      [
+        "11_7"
+      ],
+      [
+        "5_2"
+      ],
+      [
+        "4_4",
+        "4_5"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "moonwater",
+    "name": "달빛과 물의 윤곽",
+    "ko": "달빛 · 호숫가/잔잔한 바다 · 자정의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "몽환적인",
+      "고요한",
+      "도시적인",
+      "선명한"
+    ],
+    "options": [
+      "6_6",
+      "3_6",
+      "3_1",
+      "0_7"
+    ],
+    "query": "moonlit lake ocean night photography",
+    "image": "6_6",
+    "requiredGroups": [
+      [
+        "6_6"
+      ],
+      [
+        "3_6",
+        "3_1"
+      ],
+      [
+        "0_7"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "afterrain",
+    "name": "비가 그친 뒤의 반사",
+    "ko": "비 갠 직후 · 오래된 골목 · 먼지 낀 뮤트의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "따뜻한",
+      "향수 어린",
+      "고요한",
+      "몽환적인"
+    ],
+    "options": [
+      "2_7",
+      "3_2",
+      "5_1"
+    ],
+    "query": "after rain old alley reflections photography",
+    "image": "2_7",
+    "requiredGroups": [
+      [
+        "2_7"
+      ],
+      [
+        "3_2"
+      ],
+      [
+        "5_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "woodyforest",
+    "name": "나무 향을 떠올리는 숲",
+    "ko": "마른 나무 우디 · 깊은 숲 · 결이 있는 나무의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "9_0",
+      "3_0",
+      "10_5"
+    ],
+    "query": "wood texture forest earthy moodboard",
+    "image": "9_0",
+    "requiredGroups": [
+      [
+        "9_0"
+      ],
+      [
+        "3_0"
+      ],
+      [
+        "10_5"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "saltcoast",
+    "name": "소금기와 파도의 풍경",
+    "ko": "바다의 소금기 · 잔잔한 바다 · 잔잔한 파도의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "고요한",
+      "몽환적인"
+    ],
+    "options": [
+      "9_7",
+      "3_1",
+      "7_3"
+    ],
+    "query": "sea salt ocean coastal sensory moodboard",
+    "image": "3_1",
+    "requiredGroups": [
+      [
+        "9_7"
+      ],
+      [
+        "3_1"
+      ],
+      [
+        "7_3"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "floralpastel",
+    "name": "꽃과 파스텔의 겹침",
+    "ko": "은은한 플로럴 · 파스텔 · 초봄/늦봄의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "몽환적인",
+      "고요한",
+      "따뜻한",
+      "향수 어린"
+    ],
+    "options": [
+      "9_3",
+      "5_0",
+      "1_0",
+      "1_1"
+    ],
+    "query": "floral pastel spring moodboard",
+    "image": "9_3",
+    "requiredGroups": [
+      [
+        "9_3"
+      ],
+      [
+        "5_0"
+      ],
+      [
+        "1_0",
+        "1_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "musknit",
+    "name": "머스크와 니트의 포근함",
+    "ko": "포근한 머스크 · 따뜻한 니트 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "따뜻한",
+      "향수 어린"
+    ],
+    "options": [
+      "9_1",
+      "10_7",
+      "6_1"
+    ],
+    "query": "soft knit ivory warm light sensory moodboard",
+    "image": "10_7",
+    "requiredGroups": [
+      [
+        "9_1"
+      ],
+      [
+        "10_7"
+      ],
+      [
+        "6_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "citrusday",
+    "name": "시트러스빛 선명한 낮",
+    "ko": "상큼한 시트러스 · 한낮 · 선명한 비비드의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "선명한",
+      "도시적인"
+    ],
+    "options": [
+      "9_2",
+      "0_3",
+      "5_2"
+    ],
+    "query": "citrus bright daylight colorful still life",
+    "image": "9_2",
+    "requiredGroups": [
+      [
+        "9_2"
+      ],
+      [
+        "0_3"
+      ],
+      [
+        "5_2"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "rainwindow",
+    "name": "창가에 머무는 빗소리",
+    "ko": "창가의 빗소리 · 보슬비/장대비 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "고요한",
+      "몽환적인",
+      "도시적인",
+      "선명한",
+      "따뜻한",
+      "향수 어린"
+    ],
+    "options": [
+      "7_0",
+      "2_2",
+      "2_3",
+      "6_1"
+    ],
+    "query": "rain window warm ambient interior photography",
+    "image": "7_0",
+    "requiredGroups": [
+      [
+        "7_0"
+      ],
+      [
+        "2_2",
+        "2_3"
+      ],
+      [
+        "6_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "windmeadow",
+    "name": "바람이 지나는 들판",
+    "ko": "나뭇잎 바람 · 바람 부는 날 · 들판의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "7_1",
+      "2_6",
+      "3_5"
+    ],
+    "query": "wind grass meadow photography",
+    "image": "3_5",
+    "requiredGroups": [
+      [
+        "7_1"
+      ],
+      [
+        "2_6"
+      ],
+      [
+        "3_5"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "firewood",
+    "name": "장작과 나무의 온기",
+    "ko": "장작 타는 소리 · 결이 있는 나무 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "따뜻한",
+      "향수 어린",
+      "자연적인",
+      "정갈한"
+    ],
+    "options": [
+      "7_4",
+      "10_5",
+      "6_1"
+    ],
+    "query": "fireplace warm wood cabin interior",
+    "image": "7_4",
+    "requiredGroups": [
+      [
+        "7_4"
+      ],
+      [
+        "10_5"
+      ],
+      [
+        "6_1"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "fadedindie",
+    "name": "빛바랜 색과 인디의 장면",
+    "ko": "빛바랜 색 · 담백한 인디 · 오래된 골목의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "향수 어린",
+      "따뜻한"
+    ],
+    "options": [
+      "5_5",
+      "8_1",
+      "3_2"
+    ],
+    "query": "faded analog indie photography moodboard",
+    "image": "5_5",
+    "requiredGroups": [
+      [
+        "5_5"
+      ],
+      [
+        "8_1"
+      ],
+      [
+        "3_2"
+      ]
+    ],
+    "minGroups": 2
+  },
+  {
+    "id": "glasslight",
+    "name": "유리를 통과하는 투명한 빛",
+    "ko": "투명한 유리 · 투명한 색 · 아침 자연광/창문 사이 햇살의 감각을 연결하는 탐색 제안",
+    "tags": [
+      "정갈한",
+      "고요한",
+      "자연적인",
+      "선명한",
+      "도시적인"
+    ],
+    "options": [
+      "10_2",
+      "5_7",
+      "6_0",
+      "6_4"
+    ],
+    "query": "translucent glass natural light still life",
+    "image": "10_2",
+    "requiredGroups": [
+      [
+        "10_2"
+      ],
+      [
+        "5_7"
+      ],
+      [
+        "6_0",
+        "6_4"
+      ]
+    ],
+    "minGroups": 2
+  }
 ]

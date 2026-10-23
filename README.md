@@ -45,3 +45,11 @@ node scripts/check-option-images.mjs
 Pinterest 이미지는 공식 임베드로 표시하며 외부 콘텐츠는 해당 출처의 권리를 따릅니다.
 
 Instagram: [@melonade.lab](https://www.instagram.com/melonade.lab/)
+
+## 결과 DB v3
+- `result-reference-db.json`: 143개 결과 탐색 항목 (96개 개별 감각 + 32개 복합 장면 + 15개 기존 Pinterest 핀). 실제 Pinterest 사진이 143장이라는 뜻이 아닙니다.
+- `discoveries.json`: 40개 새 취향 제안. 고정 사용자 유형이 아니라 여러 후보를 독립적으로 추천합니다.
+- 복합 장면은 최소 두 선택 그룹 및 두 감각 범주가 일치해야 후보가 됩니다. 사진이 없는 탐색 항목은 기존 MOODID AI 생성 이미지를 대표 감각 예시로 표시합니다.
+- 직접 연결되는 핀이 없으면 05번 원본 핀 영역은 빈 상태를 안내하며, 06번에서 감각 예시와 Pinterest 검색으로 탐색을 이어갑니다.
+- AI에는 적합한 후보 최대 24개와 실제 일치 선택만 전달합니다. 제목·검색어·이미지 연결은 DB로 고정하고 AI는 연결 설명을 작성합니다.
+- 검증: `node scripts/check-result-db.mjs` (96개 선택지 전체, 240개 응답 조합, 다양성·결정성·핀 조건). 새 핀은 실제 출처와 장면을 확인한 후 두 카탈로그에 함께 추가하세요.

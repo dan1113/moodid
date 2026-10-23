@@ -1,0 +1,3821 @@
+{
+  "version": 3,
+  "references": [
+    {
+      "id": "sense-0_0",
+      "title": "새벽 4시 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_0"
+      ],
+      "requiredGroups": [
+        [
+          "0_0"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "dawn photography",
+      "image": "0_0",
+      "imageType": "generated",
+      "description": "선택한 새벽 4시에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-0_1",
+      "title": "동트는 아침 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_1"
+      ],
+      "requiredGroups": [
+        [
+          "0_1"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "morning photography",
+      "image": "0_1",
+      "imageType": "generated",
+      "description": "선택한 동트는 아침에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-0_2",
+      "title": "오전 10시 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_2"
+      ],
+      "requiredGroups": [
+        [
+          "0_2"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "sunlit morning photography",
+      "image": "0_2",
+      "imageType": "generated",
+      "description": "선택한 오전 10시에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-0_3",
+      "title": "한낮 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_3"
+      ],
+      "requiredGroups": [
+        [
+          "0_3"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "midday photography",
+      "image": "0_3",
+      "imageType": "generated",
+      "description": "선택한 한낮에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-0_4",
+      "title": "오후 3시 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_4"
+      ],
+      "requiredGroups": [
+        [
+          "0_4"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "afternoon photography",
+      "image": "0_4",
+      "imageType": "generated",
+      "description": "선택한 오후 3시에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-0_5",
+      "title": "해 질 녘 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_5"
+      ],
+      "requiredGroups": [
+        [
+          "0_5"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "sunset photography",
+      "image": "0_5",
+      "imageType": "generated",
+      "description": "선택한 해 질 녘에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-0_6",
+      "title": "블루 아워 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_6"
+      ],
+      "requiredGroups": [
+        [
+          "0_6"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "blue hour photography",
+      "image": "0_6",
+      "imageType": "generated",
+      "description": "선택한 블루 아워에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-0_7",
+      "title": "자정 — 시간 레퍼런스",
+      "kind": "time",
+      "options": [
+        "0_7"
+      ],
+      "requiredGroups": [
+        [
+          "0_7"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "midnight photography",
+      "image": "0_7",
+      "imageType": "generated",
+      "description": "선택한 자정에서 출발하는 시간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_0",
+      "title": "초봄 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_0"
+      ],
+      "requiredGroups": [
+        [
+          "1_0"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "early spring landscape photography",
+      "image": "1_0",
+      "imageType": "generated",
+      "description": "선택한 초봄에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_1",
+      "title": "늦봄 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_1"
+      ],
+      "requiredGroups": [
+        [
+          "1_1"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "late spring landscape photography",
+      "image": "1_1",
+      "imageType": "generated",
+      "description": "선택한 늦봄에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_2",
+      "title": "초여름 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_2"
+      ],
+      "requiredGroups": [
+        [
+          "1_2"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "early summer landscape photography",
+      "image": "1_2",
+      "imageType": "generated",
+      "description": "선택한 초여름에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_3",
+      "title": "한여름 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_3"
+      ],
+      "requiredGroups": [
+        [
+          "1_3"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "summer landscape photography",
+      "image": "1_3",
+      "imageType": "generated",
+      "description": "선택한 한여름에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_4",
+      "title": "장마철 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_4"
+      ],
+      "requiredGroups": [
+        [
+          "1_4"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "rainy season landscape photography",
+      "image": "1_4",
+      "imageType": "generated",
+      "description": "선택한 장마철에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_5",
+      "title": "초가을 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_5"
+      ],
+      "requiredGroups": [
+        [
+          "1_5"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "early autumn landscape photography",
+      "image": "1_5",
+      "imageType": "generated",
+      "description": "선택한 초가을에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_6",
+      "title": "늦가을 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_6"
+      ],
+      "requiredGroups": [
+        [
+          "1_6"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "late autumn landscape photography",
+      "image": "1_6",
+      "imageType": "generated",
+      "description": "선택한 늦가을에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-1_7",
+      "title": "한겨울 — 계절 레퍼런스",
+      "kind": "season",
+      "options": [
+        "1_7"
+      ],
+      "requiredGroups": [
+        [
+          "1_7"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "winter landscape photography",
+      "image": "1_7",
+      "imageType": "generated",
+      "description": "선택한 한겨울에서 출발하는 계절 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_0",
+      "title": "맑은 하늘 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_0"
+      ],
+      "requiredGroups": [
+        [
+          "2_0"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "clear sky landscape photography",
+      "image": "2_0",
+      "imageType": "generated",
+      "description": "선택한 맑은 하늘에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_1",
+      "title": "옅은 안개 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_1"
+      ],
+      "requiredGroups": [
+        [
+          "2_1"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "mist landscape photography",
+      "image": "2_1",
+      "imageType": "generated",
+      "description": "선택한 옅은 안개에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_2",
+      "title": "보슬비 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_2"
+      ],
+      "requiredGroups": [
+        [
+          "2_2"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "drizzle landscape photography",
+      "image": "2_2",
+      "imageType": "generated",
+      "description": "선택한 보슬비에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_3",
+      "title": "장대비 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_3"
+      ],
+      "requiredGroups": [
+        [
+          "2_3"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "heavy rain landscape photography",
+      "image": "2_3",
+      "imageType": "generated",
+      "description": "선택한 장대비에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_4",
+      "title": "흐린 하늘 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_4"
+      ],
+      "requiredGroups": [
+        [
+          "2_4"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "overcast landscape photography",
+      "image": "2_4",
+      "imageType": "generated",
+      "description": "선택한 흐린 하늘에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_5",
+      "title": "소복한 눈 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_5"
+      ],
+      "requiredGroups": [
+        [
+          "2_5"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "snow landscape photography",
+      "image": "2_5",
+      "imageType": "generated",
+      "description": "선택한 소복한 눈에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_6",
+      "title": "바람 부는 날 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_6"
+      ],
+      "requiredGroups": [
+        [
+          "2_6"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "windy landscape photography",
+      "image": "2_6",
+      "imageType": "generated",
+      "description": "선택한 바람 부는 날에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-2_7",
+      "title": "비 갠 직후 — 날씨 레퍼런스",
+      "kind": "weather",
+      "options": [
+        "2_7"
+      ],
+      "requiredGroups": [
+        [
+          "2_7"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "after rain landscape photography",
+      "image": "2_7",
+      "imageType": "generated",
+      "description": "선택한 비 갠 직후에서 출발하는 날씨 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_0",
+      "title": "깊은 숲 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_0"
+      ],
+      "requiredGroups": [
+        [
+          "3_0"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "forest landscape photography",
+      "image": "3_0",
+      "imageType": "generated",
+      "description": "선택한 깊은 숲에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_1",
+      "title": "잔잔한 바다 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_1"
+      ],
+      "requiredGroups": [
+        [
+          "3_1"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "ocean landscape photography",
+      "image": "3_1",
+      "imageType": "generated",
+      "description": "선택한 잔잔한 바다에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_2",
+      "title": "오래된 골목 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_2"
+      ],
+      "requiredGroups": [
+        [
+          "3_2"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "old alley landscape photography",
+      "image": "3_2",
+      "imageType": "generated",
+      "description": "선택한 오래된 골목에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_3",
+      "title": "도시의 옥상 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_3"
+      ],
+      "requiredGroups": [
+        [
+          "3_3"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "city rooftop landscape photography",
+      "image": "3_3",
+      "imageType": "generated",
+      "description": "선택한 도시의 옥상에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_4",
+      "title": "작은 도서관 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_4"
+      ],
+      "requiredGroups": [
+        [
+          "3_4"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "library landscape photography",
+      "image": "3_4",
+      "imageType": "generated",
+      "description": "선택한 작은 도서관에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_5",
+      "title": "들판 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_5"
+      ],
+      "requiredGroups": [
+        [
+          "3_5"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "meadow landscape photography",
+      "image": "3_5",
+      "imageType": "generated",
+      "description": "선택한 들판에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_6",
+      "title": "호숫가 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_6"
+      ],
+      "requiredGroups": [
+        [
+          "3_6"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "lake landscape photography",
+      "image": "3_6",
+      "imageType": "generated",
+      "description": "선택한 호숫가에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-3_7",
+      "title": "지하철역 — 장소 레퍼런스",
+      "kind": "scenery",
+      "options": [
+        "3_7"
+      ],
+      "requiredGroups": [
+        [
+          "3_7"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "train station landscape photography",
+      "image": "3_7",
+      "imageType": "generated",
+      "description": "선택한 지하철역에서 출발하는 장소 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_0",
+      "title": "네이비 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_0"
+      ],
+      "requiredGroups": [
+        [
+          "4_0"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "navy color palette design",
+      "image": "4_0",
+      "imageType": "generated",
+      "description": "선택한 네이비에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_1",
+      "title": "버건디 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_1"
+      ],
+      "requiredGroups": [
+        [
+          "4_1"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "burgundy color palette design",
+      "image": "4_1",
+      "imageType": "generated",
+      "description": "선택한 버건디에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_2",
+      "title": "아이보리 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_2"
+      ],
+      "requiredGroups": [
+        [
+          "4_2"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "ivory color palette design",
+      "image": "4_2",
+      "imageType": "generated",
+      "description": "선택한 아이보리에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_3",
+      "title": "올리브 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_3"
+      ],
+      "requiredGroups": [
+        [
+          "4_3"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "olive color palette design",
+      "image": "4_3",
+      "imageType": "generated",
+      "description": "선택한 올리브에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_4",
+      "title": "코발트 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_4"
+      ],
+      "requiredGroups": [
+        [
+          "4_4"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "cobalt color palette design",
+      "image": "4_4",
+      "imageType": "generated",
+      "description": "선택한 코발트에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_5",
+      "title": "테라코타 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_5"
+      ],
+      "requiredGroups": [
+        [
+          "4_5"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "terracotta color palette design",
+      "image": "4_5",
+      "imageType": "generated",
+      "description": "선택한 테라코타에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_6",
+      "title": "라벤더 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_6"
+      ],
+      "requiredGroups": [
+        [
+          "4_6"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "lavender color palette design",
+      "image": "4_6",
+      "imageType": "generated",
+      "description": "선택한 라벤더에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-4_7",
+      "title": "차콜 — 색상 레퍼런스",
+      "kind": "color",
+      "options": [
+        "4_7"
+      ],
+      "requiredGroups": [
+        [
+          "4_7"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "charcoal color palette design",
+      "image": "4_7",
+      "imageType": "generated",
+      "description": "선택한 차콜에서 출발하는 색상 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_0",
+      "title": "파스텔 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_0"
+      ],
+      "requiredGroups": [
+        [
+          "5_0"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "pastel color palette photography",
+      "image": "5_0",
+      "imageType": "generated",
+      "description": "선택한 파스텔에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_1",
+      "title": "먼지 낀 뮤트 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_1"
+      ],
+      "requiredGroups": [
+        [
+          "5_1"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "muted color palette photography",
+      "image": "5_1",
+      "imageType": "generated",
+      "description": "선택한 먼지 낀 뮤트에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_2",
+      "title": "선명한 비비드 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_2"
+      ],
+      "requiredGroups": [
+        [
+          "5_2"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "vivid color palette photography",
+      "image": "5_2",
+      "imageType": "generated",
+      "description": "선택한 선명한 비비드에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_3",
+      "title": "깊은 딥톤 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_3"
+      ],
+      "requiredGroups": [
+        [
+          "5_3"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "deep tones color palette photography",
+      "image": "5_3",
+      "imageType": "generated",
+      "description": "선택한 깊은 딥톤에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_4",
+      "title": "모노톤 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_4"
+      ],
+      "requiredGroups": [
+        [
+          "5_4"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "monochrome color palette photography",
+      "image": "5_4",
+      "imageType": "generated",
+      "description": "선택한 모노톤에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_5",
+      "title": "빛바랜 색 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_5"
+      ],
+      "requiredGroups": [
+        [
+          "5_5"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "faded color palette photography",
+      "image": "5_5",
+      "imageType": "generated",
+      "description": "선택한 빛바랜 색에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_6",
+      "title": "흙빛 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_6"
+      ],
+      "requiredGroups": [
+        [
+          "5_6"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "earthy color palette photography",
+      "image": "5_6",
+      "imageType": "generated",
+      "description": "선택한 흙빛에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-5_7",
+      "title": "투명한 색 — 색조 레퍼런스",
+      "kind": "tone",
+      "options": [
+        "5_7"
+      ],
+      "requiredGroups": [
+        [
+          "5_7"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "translucent color palette photography",
+      "image": "5_7",
+      "imageType": "generated",
+      "description": "선택한 투명한 색에서 출발하는 색조 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_0",
+      "title": "아침 자연광 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_0"
+      ],
+      "requiredGroups": [
+        [
+          "6_0"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "morning light interior lighting photography",
+      "image": "6_0",
+      "imageType": "generated",
+      "description": "선택한 아침 자연광에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_1",
+      "title": "따뜻한 간접조명 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_1"
+      ],
+      "requiredGroups": [
+        [
+          "6_1"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "warm ambient light interior lighting photography",
+      "image": "6_1",
+      "imageType": "generated",
+      "description": "선택한 따뜻한 간접조명에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_2",
+      "title": "네온사인 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_2"
+      ],
+      "requiredGroups": [
+        [
+          "6_2"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "neon interior lighting photography",
+      "image": "6_2",
+      "imageType": "generated",
+      "description": "선택한 네온사인에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_3",
+      "title": "촛불 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_3"
+      ],
+      "requiredGroups": [
+        [
+          "6_3"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "candlelight interior lighting photography",
+      "image": "6_3",
+      "imageType": "generated",
+      "description": "선택한 촛불에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_4",
+      "title": "창문 사이 햇살 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_4"
+      ],
+      "requiredGroups": [
+        [
+          "6_4"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "window sunlight interior lighting photography",
+      "image": "6_4",
+      "imageType": "generated",
+      "description": "선택한 창문 사이 햇살에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_5",
+      "title": "차가운 형광등 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_5"
+      ],
+      "requiredGroups": [
+        [
+          "6_5"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "fluorescent interior lighting photography",
+      "image": "6_5",
+      "imageType": "generated",
+      "description": "선택한 차가운 형광등에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_6",
+      "title": "달빛 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_6"
+      ],
+      "requiredGroups": [
+        [
+          "6_6"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "moonlight interior lighting photography",
+      "image": "6_6",
+      "imageType": "generated",
+      "description": "선택한 달빛에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-6_7",
+      "title": "흐린 날 확산광 — 빛 레퍼런스",
+      "kind": "light",
+      "options": [
+        "6_7"
+      ],
+      "requiredGroups": [
+        [
+          "6_7"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "diffused light interior lighting photography",
+      "image": "6_7",
+      "imageType": "generated",
+      "description": "선택한 흐린 날 확산광에서 출발하는 빛 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_0",
+      "title": "창가의 빗소리 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_0"
+      ],
+      "requiredGroups": [
+        [
+          "7_0"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "rain sounds visual moodboard",
+      "image": "7_0",
+      "imageType": "generated",
+      "description": "선택한 창가의 빗소리에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_1",
+      "title": "나뭇잎 바람 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_1"
+      ],
+      "requiredGroups": [
+        [
+          "7_1"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "rustling leaves visual moodboard",
+      "image": "7_1",
+      "imageType": "generated",
+      "description": "선택한 나뭇잎 바람에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_2",
+      "title": "달리는 열차 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_2"
+      ],
+      "requiredGroups": [
+        [
+          "7_2"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "train sounds visual moodboard",
+      "image": "7_2",
+      "imageType": "generated",
+      "description": "선택한 달리는 열차에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_3",
+      "title": "잔잔한 파도 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_3"
+      ],
+      "requiredGroups": [
+        [
+          "7_3"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "ocean waves visual moodboard",
+      "image": "7_3",
+      "imageType": "generated",
+      "description": "선택한 잔잔한 파도에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_4",
+      "title": "장작 타는 소리 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_4"
+      ],
+      "requiredGroups": [
+        [
+          "7_4"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "crackling fire visual moodboard",
+      "image": "7_4",
+      "imageType": "generated",
+      "description": "선택한 장작 타는 소리에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_5",
+      "title": "카페의 웅성거림 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_5"
+      ],
+      "requiredGroups": [
+        [
+          "7_5"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "cafe ambience visual moodboard",
+      "image": "7_5",
+      "imageType": "generated",
+      "description": "선택한 카페의 웅성거림에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_6",
+      "title": "도시의 밤 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_6"
+      ],
+      "requiredGroups": [
+        [
+          "7_6"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "city night visual moodboard",
+      "image": "7_6",
+      "imageType": "generated",
+      "description": "선택한 도시의 밤에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-7_7",
+      "title": "고요한 정적 — 소리 레퍼런스",
+      "kind": "sound",
+      "options": [
+        "7_7"
+      ],
+      "requiredGroups": [
+        [
+          "7_7"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "silence visual moodboard",
+      "image": "7_7",
+      "imageType": "generated",
+      "description": "선택한 고요한 정적에서 출발하는 소리 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_0",
+      "title": "느긋한 재즈 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_0"
+      ],
+      "requiredGroups": [
+        [
+          "8_0"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "jazz listening room interior",
+      "image": "8_0",
+      "imageType": "generated",
+      "description": "선택한 느긋한 재즈에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_1",
+      "title": "담백한 인디 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_1"
+      ],
+      "requiredGroups": [
+        [
+          "8_1"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "indie listening room interior",
+      "image": "8_1",
+      "imageType": "generated",
+      "description": "선택한 담백한 인디에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_2",
+      "title": "공간을 채우는 앰비언트 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_2"
+      ],
+      "requiredGroups": [
+        [
+          "8_2"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "ambient listening room interior",
+      "image": "8_2",
+      "imageType": "generated",
+      "description": "선택한 공간을 채우는 앰비언트에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_3",
+      "title": "피아노 클래식 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_3"
+      ],
+      "requiredGroups": [
+        [
+          "8_3"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "classical piano listening room interior",
+      "image": "8_3",
+      "imageType": "generated",
+      "description": "선택한 피아노 클래식에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_4",
+      "title": "로파이 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_4"
+      ],
+      "requiredGroups": [
+        [
+          "8_4"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "lofi listening room interior",
+      "image": "8_4",
+      "imageType": "generated",
+      "description": "선택한 로파이에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_5",
+      "title": "몽환적인 드림팝 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_5"
+      ],
+      "requiredGroups": [
+        [
+          "8_5"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "dream pop listening room interior",
+      "image": "8_5",
+      "imageType": "generated",
+      "description": "선택한 몽환적인 드림팝에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_6",
+      "title": "일렉트로닉 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_6"
+      ],
+      "requiredGroups": [
+        [
+          "8_6"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "electronic listening room interior",
+      "image": "8_6",
+      "imageType": "generated",
+      "description": "선택한 일렉트로닉에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-8_7",
+      "title": "어쿠스틱 — 음악 레퍼런스",
+      "kind": "music",
+      "options": [
+        "8_7"
+      ],
+      "requiredGroups": [
+        [
+          "8_7"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "acoustic listening room interior",
+      "image": "8_7",
+      "imageType": "generated",
+      "description": "선택한 어쿠스틱에서 출발하는 음악 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_0",
+      "title": "마른 나무 우디 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_0"
+      ],
+      "requiredGroups": [
+        [
+          "9_0"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "woody sensory moodboard",
+      "image": "9_0",
+      "imageType": "generated",
+      "description": "선택한 마른 나무 우디에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_1",
+      "title": "포근한 머스크 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_1"
+      ],
+      "requiredGroups": [
+        [
+          "9_1"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "musk sensory moodboard",
+      "image": "9_1",
+      "imageType": "generated",
+      "description": "선택한 포근한 머스크에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_2",
+      "title": "상큼한 시트러스 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_2"
+      ],
+      "requiredGroups": [
+        [
+          "9_2"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "citrus sensory moodboard",
+      "image": "9_2",
+      "imageType": "generated",
+      "description": "선택한 상큼한 시트러스에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_3",
+      "title": "은은한 플로럴 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_3"
+      ],
+      "requiredGroups": [
+        [
+          "9_3"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "floral sensory moodboard",
+      "image": "9_3",
+      "imageType": "generated",
+      "description": "선택한 은은한 플로럴에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_4",
+      "title": "젖은 흙 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_4"
+      ],
+      "requiredGroups": [
+        [
+          "9_4"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "petrichor sensory moodboard",
+      "image": "9_4",
+      "imageType": "generated",
+      "description": "선택한 젖은 흙에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_5",
+      "title": "깨끗한 비누 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_5"
+      ],
+      "requiredGroups": [
+        [
+          "9_5"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "clean soap sensory moodboard",
+      "image": "9_5",
+      "imageType": "generated",
+      "description": "선택한 깨끗한 비누에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_6",
+      "title": "달콤한 바닐라 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_6"
+      ],
+      "requiredGroups": [
+        [
+          "9_6"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "vanilla sensory moodboard",
+      "image": "9_6",
+      "imageType": "generated",
+      "description": "선택한 달콤한 바닐라에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-9_7",
+      "title": "바다의 소금기 — 향 레퍼런스",
+      "kind": "scent",
+      "options": [
+        "9_7"
+      ],
+      "requiredGroups": [
+        [
+          "9_7"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "sea salt sensory moodboard",
+      "image": "9_7",
+      "imageType": "generated",
+      "description": "선택한 바다의 소금기에서 출발하는 향 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_0",
+      "title": "바스락한 린넨 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_0"
+      ],
+      "requiredGroups": [
+        [
+          "10_0"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "linen material texture photography",
+      "image": "10_0",
+      "imageType": "generated",
+      "description": "선택한 바스락한 린넨에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_1",
+      "title": "거친 콘크리트 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_1"
+      ],
+      "requiredGroups": [
+        [
+          "10_1"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "concrete material texture photography",
+      "image": "10_1",
+      "imageType": "generated",
+      "description": "선택한 거친 콘크리트에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_2",
+      "title": "투명한 유리 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_2"
+      ],
+      "requiredGroups": [
+        [
+          "10_2"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "glass material texture photography",
+      "image": "10_2",
+      "imageType": "generated",
+      "description": "선택한 투명한 유리에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_3",
+      "title": "오래된 종이 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_3"
+      ],
+      "requiredGroups": [
+        [
+          "10_3"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "aged paper material texture photography",
+      "image": "10_3",
+      "imageType": "generated",
+      "description": "선택한 오래된 종이에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_4",
+      "title": "부드러운 벨벳 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_4"
+      ],
+      "requiredGroups": [
+        [
+          "10_4"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "velvet material texture photography",
+      "image": "10_4",
+      "imageType": "generated",
+      "description": "선택한 부드러운 벨벳에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_5",
+      "title": "결이 있는 나무 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_5"
+      ],
+      "requiredGroups": [
+        [
+          "10_5"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "wood grain material texture photography",
+      "image": "10_5",
+      "imageType": "generated",
+      "description": "선택한 결이 있는 나무에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_6",
+      "title": "차가운 금속 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_6"
+      ],
+      "requiredGroups": [
+        [
+          "10_6"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "metal material texture photography",
+      "image": "10_6",
+      "imageType": "generated",
+      "description": "선택한 차가운 금속에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-10_7",
+      "title": "따뜻한 니트 — 질감 레퍼런스",
+      "kind": "material",
+      "options": [
+        "10_7"
+      ],
+      "requiredGroups": [
+        [
+          "10_7"
+        ]
+      ],
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "query": "knit material texture photography",
+      "image": "10_7",
+      "imageType": "generated",
+      "description": "선택한 따뜻한 니트에서 출발하는 질감 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_0",
+      "title": "여백 있는 미니멀 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_0"
+      ],
+      "requiredGroups": [
+        [
+          "11_0"
+        ]
+      ],
+      "tags": [
+        "정갈한",
+        "고요한"
+      ],
+      "query": "minimal interior interior photography",
+      "image": "11_0",
+      "imageType": "generated",
+      "description": "선택한 여백 있는 미니멀에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_1",
+      "title": "시간이 쌓인 빈티지 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_1"
+      ],
+      "requiredGroups": [
+        [
+          "11_1"
+        ]
+      ],
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "query": "vintage interior interior photography",
+      "image": "11_1",
+      "imageType": "generated",
+      "description": "선택한 시간이 쌓인 빈티지에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_2",
+      "title": "묵직한 브루탈리즘 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_2"
+      ],
+      "requiredGroups": [
+        [
+          "11_2"
+        ]
+      ],
+      "tags": [
+        "도시적인",
+        "선명한"
+      ],
+      "query": "brutalist interior interior photography",
+      "image": "11_2",
+      "imageType": "generated",
+      "description": "선택한 묵직한 브루탈리즘에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_3",
+      "title": "편안한 내추럴 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_3"
+      ],
+      "requiredGroups": [
+        [
+          "11_3"
+        ]
+      ],
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "query": "natural interior interior photography",
+      "image": "11_3",
+      "imageType": "generated",
+      "description": "선택한 편안한 내추럴에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_4",
+      "title": "자유로운 보헤미안 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_4"
+      ],
+      "requiredGroups": [
+        [
+          "11_4"
+        ]
+      ],
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "query": "bohemian interior interior photography",
+      "image": "11_4",
+      "imageType": "generated",
+      "description": "선택한 자유로운 보헤미안에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_5",
+      "title": "반짝이는 퓨처리즘 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_5"
+      ],
+      "requiredGroups": [
+        [
+          "11_5"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "futuristic interior interior photography",
+      "image": "11_5",
+      "imageType": "generated",
+      "description": "선택한 반짝이는 퓨처리즘에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_6",
+      "title": "정갈한 일본식 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_6"
+      ],
+      "requiredGroups": [
+        [
+          "11_6"
+        ]
+      ],
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "query": "japanese interior interior photography",
+      "image": "11_6",
+      "imageType": "generated",
+      "description": "선택한 정갈한 일본식에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sense-11_7",
+      "title": "풍성한 맥시멀 — 공간 레퍼런스",
+      "kind": "space",
+      "options": [
+        "11_7"
+      ],
+      "requiredGroups": [
+        [
+          "11_7"
+        ]
+      ],
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "query": "maximalist interior interior photography",
+      "image": "11_7",
+      "imageType": "generated",
+      "description": "선택한 풍성한 맥시멀에서 출발하는 공간 중심의 시각 탐색",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "mistwoods",
+      "title": "안개가 내려앉은 숲",
+      "query": "misty forest diffused light photography",
+      "kind": "scenery",
+      "image": "3_0",
+      "imageType": "generated",
+      "options": [
+        "2_1",
+        "3_0",
+        "6_7"
+      ],
+      "requiredGroups": [
+        [
+          "2_1"
+        ],
+        [
+          "3_0"
+        ],
+        [
+          "6_7"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "몽환적인",
+        "고요한",
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "옅은 안개 · 깊은 숲 · 흐린 날 확산광의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "winterlake",
+      "title": "눈과 호수의 고요",
+      "query": "snowy winter lake quiet photography",
+      "kind": "scenery",
+      "image": "3_6",
+      "imageType": "generated",
+      "options": [
+        "1_7",
+        "2_5",
+        "3_6"
+      ],
+      "requiredGroups": [
+        [
+          "1_7"
+        ],
+        [
+          "2_5"
+        ],
+        [
+          "3_6"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "정갈한",
+        "고요한",
+        "몽환적인"
+      ],
+      "description": "한겨울 · 소복한 눈 · 호숫가의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "coastlinen",
+      "title": "파도와 린넨의 여백",
+      "query": "coastal linen natural light interior",
+      "kind": "space",
+      "image": "10_0",
+      "imageType": "generated",
+      "options": [
+        "3_1",
+        "7_3",
+        "10_0"
+      ],
+      "requiredGroups": [
+        [
+          "3_1"
+        ],
+        [
+          "7_3"
+        ],
+        [
+          "10_0"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "고요한",
+        "몽환적인",
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "잔잔한 바다 · 잔잔한 파도 · 바스락한 린넨의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "bluecity",
+      "title": "푸른 시간이 머무는 도시",
+      "query": "blue hour city rooftop photography",
+      "kind": "scenery",
+      "image": "0_6",
+      "imageType": "generated",
+      "options": [
+        "0_6",
+        "3_3",
+        "4_0"
+      ],
+      "requiredGroups": [
+        [
+          "0_6"
+        ],
+        [
+          "3_3"
+        ],
+        [
+          "4_0"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "몽환적인",
+        "고요한",
+        "도시적인",
+        "선명한"
+      ],
+      "description": "블루 아워 · 도시의 옥상 · 네이비의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "neonrain",
+      "title": "비에 번지는 네온",
+      "query": "rainy neon city night photography",
+      "kind": "scenery",
+      "image": "6_2",
+      "imageType": "generated",
+      "options": [
+        "2_2",
+        "2_3",
+        "6_2",
+        "0_7"
+      ],
+      "requiredGroups": [
+        [
+          "2_2",
+          "2_3"
+        ],
+        [
+          "6_2"
+        ],
+        [
+          "0_7"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "고요한",
+        "몽환적인",
+        "도시적인",
+        "선명한"
+      ],
+      "description": "보슬비/장대비 · 네온사인 · 자정의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "warmbooks",
+      "title": "책과 조명의 깊은 온기",
+      "query": "warm lighting vintage library wood interior",
+      "kind": "space",
+      "image": "3_4",
+      "imageType": "generated",
+      "options": [
+        "3_4",
+        "6_1",
+        "10_3",
+        "10_5"
+      ],
+      "requiredGroups": [
+        [
+          "3_4"
+        ],
+        [
+          "6_1"
+        ],
+        [
+          "10_3",
+          "10_5"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "정갈한",
+        "고요한",
+        "따뜻한",
+        "향수 어린",
+        "자연적인"
+      ],
+      "description": "작은 도서관 · 따뜻한 간접조명 · 오래된 종이/결이 있는 나무의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "sunminimal",
+      "title": "햇빛과 정돈된 여백",
+      "query": "sunlight minimalist ivory interior",
+      "kind": "space",
+      "image": "11_0",
+      "imageType": "generated",
+      "options": [
+        "11_0",
+        "6_4",
+        "4_2"
+      ],
+      "requiredGroups": [
+        [
+          "11_0"
+        ],
+        [
+          "6_4"
+        ],
+        [
+          "4_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "정갈한",
+        "고요한",
+        "선명한",
+        "도시적인"
+      ],
+      "description": "여백 있는 미니멀 · 창문 사이 햇살 · 아이보리의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "candlevelvet",
+      "title": "촛불 아래 벨벳",
+      "query": "candlelight velvet burgundy interior",
+      "kind": "light",
+      "image": "6_3",
+      "imageType": "generated",
+      "options": [
+        "6_3",
+        "10_4",
+        "4_1"
+      ],
+      "requiredGroups": [
+        [
+          "6_3"
+        ],
+        [
+          "10_4"
+        ],
+        [
+          "4_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "따뜻한",
+        "향수 어린",
+        "몽환적인",
+        "고요한"
+      ],
+      "description": "촛불 · 부드러운 벨벳 · 버건디의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "olivewood",
+      "title": "올리브와 나무의 결",
+      "query": "olive wood natural interior earthy",
+      "kind": "material",
+      "image": "10_5",
+      "imageType": "generated",
+      "options": [
+        "4_3",
+        "10_5",
+        "11_3"
+      ],
+      "requiredGroups": [
+        [
+          "4_3"
+        ],
+        [
+          "10_5"
+        ],
+        [
+          "11_3"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "올리브 · 결이 있는 나무 · 편안한 내추럴의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "lavenderdream",
+      "title": "라벤더빛 몽환의 장면",
+      "query": "lavender dream pop ethereal moodboard",
+      "kind": "color",
+      "image": "4_6",
+      "imageType": "generated",
+      "options": [
+        "4_6",
+        "8_5",
+        "5_0"
+      ],
+      "requiredGroups": [
+        [
+          "4_6"
+        ],
+        [
+          "8_5"
+        ],
+        [
+          "5_0"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "몽환적인",
+        "고요한"
+      ],
+      "description": "라벤더 · 몽환적인 드림팝 · 파스텔의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "chromeambient",
+      "title": "금속과 앰비언트의 공간",
+      "query": "chrome futuristic ambient light interior",
+      "kind": "space",
+      "image": "11_5",
+      "imageType": "generated",
+      "options": [
+        "10_6",
+        "11_5",
+        "8_2"
+      ],
+      "requiredGroups": [
+        [
+          "10_6"
+        ],
+        [
+          "11_5"
+        ],
+        [
+          "8_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "도시적인",
+        "선명한",
+        "몽환적인",
+        "고요한"
+      ],
+      "description": "차가운 금속 · 반짝이는 퓨처리즘 · 공간을 채우는 앰비언트의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "concretesilence",
+      "title": "콘크리트와 고요한 구조",
+      "query": "brutalist concrete monochrome architecture",
+      "kind": "space",
+      "image": "11_2",
+      "imageType": "generated",
+      "options": [
+        "10_1",
+        "11_2",
+        "5_4"
+      ],
+      "requiredGroups": [
+        [
+          "10_1"
+        ],
+        [
+          "11_2"
+        ],
+        [
+          "5_4"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "도시적인",
+        "선명한",
+        "정갈한",
+        "고요한"
+      ],
+      "description": "거친 콘크리트 · 묵직한 브루탈리즘 · 모노톤의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "springmeadow",
+      "title": "초봄 들판의 빛",
+      "query": "early spring meadow soft sunlight",
+      "kind": "scenery",
+      "image": "3_5",
+      "imageType": "generated",
+      "options": [
+        "1_0",
+        "3_5",
+        "6_0"
+      ],
+      "requiredGroups": [
+        [
+          "1_0"
+        ],
+        [
+          "3_5"
+        ],
+        [
+          "6_0"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "몽환적인",
+        "고요한",
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "초봄 · 들판 · 아침 자연광의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "summersea",
+      "title": "한여름 바다의 선명함",
+      "query": "summer ocean cobalt clear sky photography",
+      "kind": "scenery",
+      "image": "3_1",
+      "imageType": "generated",
+      "options": [
+        "1_3",
+        "3_1",
+        "4_4"
+      ],
+      "requiredGroups": [
+        [
+          "1_3"
+        ],
+        [
+          "3_1"
+        ],
+        [
+          "4_4"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "선명한",
+        "도시적인",
+        "고요한",
+        "몽환적인"
+      ],
+      "description": "한여름 · 잔잔한 바다 · 코발트의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "autumnpaper",
+      "title": "가을과 오래된 종이",
+      "query": "autumn aged paper muted still life",
+      "kind": "material",
+      "image": "10_3",
+      "imageType": "generated",
+      "options": [
+        "1_6",
+        "10_3",
+        "5_1"
+      ],
+      "requiredGroups": [
+        [
+          "1_6"
+        ],
+        [
+          "10_3"
+        ],
+        [
+          "5_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "향수 어린",
+        "따뜻한",
+        "고요한",
+        "몽환적인"
+      ],
+      "description": "늦가을 · 오래된 종이 · 먼지 낀 뮤트의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "nighttrain",
+      "title": "심야 열차의 리듬",
+      "query": "midnight train station cinematic photography",
+      "kind": "scenery",
+      "image": "3_7",
+      "imageType": "generated",
+      "options": [
+        "0_7",
+        "3_7",
+        "7_2"
+      ],
+      "requiredGroups": [
+        [
+          "0_7"
+        ],
+        [
+          "3_7"
+        ],
+        [
+          "7_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "도시적인",
+        "선명한",
+        "향수 어린",
+        "따뜻한"
+      ],
+      "description": "자정 · 지하철역 · 달리는 열차의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "kissatenroom",
+      "title": "재즈와 빈티지의 느린 시간",
+      "query": "japanese kissaten jazz vintage interior",
+      "kind": "music",
+      "image": "11_1",
+      "imageType": "generated",
+      "options": [
+        "8_0",
+        "11_1",
+        "6_1"
+      ],
+      "requiredGroups": [
+        [
+          "8_0"
+        ],
+        [
+          "11_1"
+        ],
+        [
+          "6_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "description": "느긋한 재즈 · 시간이 쌓인 빈티지 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "japanlinen",
+      "title": "린넨과 일본식 여백",
+      "query": "japanese minimalist linen natural interior",
+      "kind": "space",
+      "image": "11_6",
+      "imageType": "generated",
+      "options": [
+        "11_6",
+        "10_0",
+        "11_0"
+      ],
+      "requiredGroups": [
+        [
+          "11_6"
+        ],
+        [
+          "10_0"
+        ],
+        [
+          "11_0"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "고요한",
+        "몽환적인",
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "정갈한 일본식 · 바스락한 린넨 · 여백 있는 미니멀의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "earthboho",
+      "title": "흙빛 보헤미안의 질감",
+      "query": "earthy terracotta bohemian textured interior",
+      "kind": "space",
+      "image": "11_4",
+      "imageType": "generated",
+      "options": [
+        "11_4",
+        "5_6",
+        "4_5"
+      ],
+      "requiredGroups": [
+        [
+          "11_4"
+        ],
+        [
+          "5_6"
+        ],
+        [
+          "4_5"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "몽환적인",
+        "고요한",
+        "자연적인",
+        "정갈한",
+        "따뜻한",
+        "향수 어린"
+      ],
+      "description": "자유로운 보헤미안 · 흙빛 · 테라코타의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "vividmax",
+      "title": "색이 겹치는 맥시멀",
+      "query": "vivid colorful maximalist interior",
+      "kind": "space",
+      "image": "11_7",
+      "imageType": "generated",
+      "options": [
+        "11_7",
+        "5_2",
+        "4_4",
+        "4_5"
+      ],
+      "requiredGroups": [
+        [
+          "11_7"
+        ],
+        [
+          "5_2"
+        ],
+        [
+          "4_4",
+          "4_5"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "선명한",
+        "도시적인",
+        "따뜻한",
+        "향수 어린"
+      ],
+      "description": "풍성한 맥시멀 · 선명한 비비드 · 코발트/테라코타의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "moonwater",
+      "title": "달빛과 물의 윤곽",
+      "query": "moonlit lake ocean night photography",
+      "kind": "light",
+      "image": "6_6",
+      "imageType": "generated",
+      "options": [
+        "6_6",
+        "3_6",
+        "3_1",
+        "0_7"
+      ],
+      "requiredGroups": [
+        [
+          "6_6"
+        ],
+        [
+          "3_6",
+          "3_1"
+        ],
+        [
+          "0_7"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "몽환적인",
+        "고요한",
+        "도시적인",
+        "선명한"
+      ],
+      "description": "달빛 · 호숫가/잔잔한 바다 · 자정의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "afterrain",
+      "title": "비가 그친 뒤의 반사",
+      "query": "after rain old alley reflections photography",
+      "kind": "weather",
+      "image": "2_7",
+      "imageType": "generated",
+      "options": [
+        "2_7",
+        "3_2",
+        "5_1"
+      ],
+      "requiredGroups": [
+        [
+          "2_7"
+        ],
+        [
+          "3_2"
+        ],
+        [
+          "5_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "따뜻한",
+        "향수 어린",
+        "고요한",
+        "몽환적인"
+      ],
+      "description": "비 갠 직후 · 오래된 골목 · 먼지 낀 뮤트의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "woodyforest",
+      "title": "나무 향을 떠올리는 숲",
+      "query": "wood texture forest earthy moodboard",
+      "kind": "scent",
+      "image": "9_0",
+      "imageType": "generated",
+      "options": [
+        "9_0",
+        "3_0",
+        "10_5"
+      ],
+      "requiredGroups": [
+        [
+          "9_0"
+        ],
+        [
+          "3_0"
+        ],
+        [
+          "10_5"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "마른 나무 우디 · 깊은 숲 · 결이 있는 나무의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "saltcoast",
+      "title": "소금기와 파도의 풍경",
+      "query": "sea salt ocean coastal sensory moodboard",
+      "kind": "scent",
+      "image": "3_1",
+      "imageType": "generated",
+      "options": [
+        "9_7",
+        "3_1",
+        "7_3"
+      ],
+      "requiredGroups": [
+        [
+          "9_7"
+        ],
+        [
+          "3_1"
+        ],
+        [
+          "7_3"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "고요한",
+        "몽환적인"
+      ],
+      "description": "바다의 소금기 · 잔잔한 바다 · 잔잔한 파도의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "floralpastel",
+      "title": "꽃과 파스텔의 겹침",
+      "query": "floral pastel spring moodboard",
+      "kind": "scent",
+      "image": "9_3",
+      "imageType": "generated",
+      "options": [
+        "9_3",
+        "5_0",
+        "1_0",
+        "1_1"
+      ],
+      "requiredGroups": [
+        [
+          "9_3"
+        ],
+        [
+          "5_0"
+        ],
+        [
+          "1_0",
+          "1_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "몽환적인",
+        "고요한",
+        "따뜻한",
+        "향수 어린"
+      ],
+      "description": "은은한 플로럴 · 파스텔 · 초봄/늦봄의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "musknit",
+      "title": "머스크와 니트의 포근함",
+      "query": "soft knit ivory warm light sensory moodboard",
+      "kind": "material",
+      "image": "10_7",
+      "imageType": "generated",
+      "options": [
+        "9_1",
+        "10_7",
+        "6_1"
+      ],
+      "requiredGroups": [
+        [
+          "9_1"
+        ],
+        [
+          "10_7"
+        ],
+        [
+          "6_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "따뜻한",
+        "향수 어린"
+      ],
+      "description": "포근한 머스크 · 따뜻한 니트 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "citrusday",
+      "title": "시트러스빛 선명한 낮",
+      "query": "citrus bright daylight colorful still life",
+      "kind": "scent",
+      "image": "9_2",
+      "imageType": "generated",
+      "options": [
+        "9_2",
+        "0_3",
+        "5_2"
+      ],
+      "requiredGroups": [
+        [
+          "9_2"
+        ],
+        [
+          "0_3"
+        ],
+        [
+          "5_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "선명한",
+        "도시적인"
+      ],
+      "description": "상큼한 시트러스 · 한낮 · 선명한 비비드의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "rainwindow",
+      "title": "창가에 머무는 빗소리",
+      "query": "rain window warm ambient interior photography",
+      "kind": "sound",
+      "image": "7_0",
+      "imageType": "generated",
+      "options": [
+        "7_0",
+        "2_2",
+        "2_3",
+        "6_1"
+      ],
+      "requiredGroups": [
+        [
+          "7_0"
+        ],
+        [
+          "2_2",
+          "2_3"
+        ],
+        [
+          "6_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "고요한",
+        "몽환적인",
+        "도시적인",
+        "선명한",
+        "따뜻한",
+        "향수 어린"
+      ],
+      "description": "창가의 빗소리 · 보슬비/장대비 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "windmeadow",
+      "title": "바람이 지나는 들판",
+      "query": "wind grass meadow photography",
+      "kind": "sound",
+      "image": "3_5",
+      "imageType": "generated",
+      "options": [
+        "7_1",
+        "2_6",
+        "3_5"
+      ],
+      "requiredGroups": [
+        [
+          "7_1"
+        ],
+        [
+          "2_6"
+        ],
+        [
+          "3_5"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "나뭇잎 바람 · 바람 부는 날 · 들판의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "firewood",
+      "title": "장작과 나무의 온기",
+      "query": "fireplace warm wood cabin interior",
+      "kind": "sound",
+      "image": "7_4",
+      "imageType": "generated",
+      "options": [
+        "7_4",
+        "10_5",
+        "6_1"
+      ],
+      "requiredGroups": [
+        [
+          "7_4"
+        ],
+        [
+          "10_5"
+        ],
+        [
+          "6_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "따뜻한",
+        "향수 어린",
+        "자연적인",
+        "정갈한"
+      ],
+      "description": "장작 타는 소리 · 결이 있는 나무 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "fadedindie",
+      "title": "빛바랜 색과 인디의 장면",
+      "query": "faded analog indie photography moodboard",
+      "kind": "music",
+      "image": "5_5",
+      "imageType": "generated",
+      "options": [
+        "5_5",
+        "8_1",
+        "3_2"
+      ],
+      "requiredGroups": [
+        [
+          "5_5"
+        ],
+        [
+          "8_1"
+        ],
+        [
+          "3_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "향수 어린",
+        "따뜻한"
+      ],
+      "description": "빛바랜 색 · 담백한 인디 · 오래된 골목의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "glasslight",
+      "title": "유리를 통과하는 투명한 빛",
+      "query": "translucent glass natural light still life",
+      "kind": "material",
+      "image": "10_2",
+      "imageType": "generated",
+      "options": [
+        "10_2",
+        "5_7",
+        "6_0",
+        "6_4"
+      ],
+      "requiredGroups": [
+        [
+          "10_2"
+        ],
+        [
+          "5_7"
+        ],
+        [
+          "6_0",
+          "6_4"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "정갈한",
+        "고요한",
+        "자연적인",
+        "선명한",
+        "도시적인"
+      ],
+      "description": "투명한 유리 · 투명한 색 · 아침 자연광/창문 사이 햇살의 감각을 연결하는 탐색 제안",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-11470174040407333",
+      "pinId": "11470174040407333",
+      "title": "안개 속 숲의 고요함",
+      "query": "misty forest landscape",
+      "kind": "scenery",
+      "options": [
+        "2_1",
+        "3_0",
+        "1_7"
+      ],
+      "requiredGroups": [
+        [
+          "2_1"
+        ],
+        [
+          "3_0"
+        ],
+        [
+          "1_7"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "고요한",
+        "자연적인",
+        "몽환적인"
+      ],
+      "imageType": "pinterest",
+      "description": "안개 속 숲의 고요함",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-57069120276611036",
+      "pinId": "57069120276611036",
+      "title": "안개가 머무는 가을 풍경",
+      "query": "misty autumn landscape",
+      "kind": "scenery",
+      "options": [
+        "1_6",
+        "2_1",
+        "1_5"
+      ],
+      "requiredGroups": [
+        [
+          "1_6"
+        ],
+        [
+          "2_1"
+        ],
+        [
+          "1_5"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "향수 어린",
+        "자연적인",
+        "고요한"
+      ],
+      "imageType": "pinterest",
+      "description": "안개가 머무는 가을 풍경",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-1138918193260926339",
+      "pinId": "1138918193260926339",
+      "title": "숲을 바라보는 조용한 방",
+      "query": "minimal bedroom forest view",
+      "kind": "space",
+      "options": [
+        "3_0",
+        "11_0",
+        "2_1"
+      ],
+      "requiredGroups": [
+        [
+          "3_0"
+        ],
+        [
+          "11_0"
+        ],
+        [
+          "2_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "고요한",
+        "정갈한",
+        "자연적인"
+      ],
+      "imageType": "pinterest",
+      "description": "숲을 바라보는 조용한 방",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-805933295834410006",
+      "pinId": "805933295834410006",
+      "title": "자연광이 채우는 미니멀 공간",
+      "query": "natural light minimalist interior",
+      "kind": "space",
+      "options": [
+        "11_0",
+        "6_0",
+        "6_4",
+        "4_2"
+      ],
+      "requiredGroups": [
+        [
+          "11_0"
+        ],
+        [
+          "6_0"
+        ],
+        [
+          "6_4"
+        ],
+        [
+          "4_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "정갈한",
+        "따뜻한",
+        "자연적인"
+      ],
+      "imageType": "pinterest",
+      "description": "자연광이 채우는 미니멀 공간",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-470204017322192709",
+      "pinId": "470204017322192709",
+      "title": "시간이 쌓인 보헤미안 공간",
+      "query": "bohemian vintage interior",
+      "kind": "space",
+      "options": [
+        "11_1",
+        "11_4",
+        "10_5"
+      ],
+      "requiredGroups": [
+        [
+          "11_1"
+        ],
+        [
+          "11_4"
+        ],
+        [
+          "10_5"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "향수 어린",
+        "따뜻한",
+        "선명한"
+      ],
+      "imageType": "pinterest",
+      "description": "시간이 쌓인 보헤미안 공간",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-543880092507274236",
+      "pinId": "543880092507274236",
+      "title": "색이 살아 있는 보헤미안 인테리어",
+      "query": "colorful bohemian interior",
+      "kind": "space",
+      "options": [
+        "11_4",
+        "11_7",
+        "5_2"
+      ],
+      "requiredGroups": [
+        [
+          "11_4"
+        ],
+        [
+          "11_7"
+        ],
+        [
+          "5_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "선명한",
+        "따뜻한",
+        "자연적인"
+      ],
+      "imageType": "pinterest",
+      "description": "색이 살아 있는 보헤미안 인테리어",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-53550683061659941",
+      "pinId": "53550683061659941",
+      "title": "책과 나무가 만드는 깊은 온기",
+      "query": "cozy dark academia library fireplace",
+      "kind": "space",
+      "options": [
+        "3_4",
+        "10_3",
+        "10_5",
+        "5_3"
+      ],
+      "requiredGroups": [
+        [
+          "3_4"
+        ],
+        [
+          "10_3"
+        ],
+        [
+          "10_5"
+        ],
+        [
+          "5_3"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "향수 어린",
+        "따뜻한",
+        "고요한"
+      ],
+      "imageType": "pinterest",
+      "description": "책과 나무가 만드는 깊은 온기",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-591730838577264822",
+      "pinId": "591730838577264822",
+      "title": "일본 다방에서 발견한 느린 시간",
+      "query": "Japanese kissaten vintage cafe",
+      "kind": "atmosphere",
+      "options": [
+        "8_0",
+        "11_1",
+        "6_1"
+      ],
+      "requiredGroups": [
+        [
+          "8_0"
+        ],
+        [
+          "11_1"
+        ],
+        [
+          "6_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "향수 어린",
+        "따뜻한",
+        "정갈한"
+      ],
+      "imageType": "pinterest",
+      "description": "일본 다방에서 발견한 느린 시간",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-607141593493982181",
+      "pinId": "607141593493982181",
+      "title": "서울의 네온과 푸른 밤",
+      "query": "Seoul neon night street",
+      "kind": "scenery",
+      "options": [
+        "6_2",
+        "7_6",
+        "0_6",
+        "0_7"
+      ],
+      "requiredGroups": [
+        [
+          "6_2"
+        ],
+        [
+          "7_6"
+        ],
+        [
+          "0_6"
+        ],
+        [
+          "0_7"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "도시적인",
+        "몽환적인",
+        "선명한"
+      ],
+      "imageType": "pinterest",
+      "description": "서울의 네온과 푸른 밤",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-554365035379799804",
+      "pinId": "554365035379799804",
+      "title": "밤의 거리를 기록한 사진",
+      "query": "night street photography",
+      "kind": "atmosphere",
+      "options": [
+        "3_2",
+        "7_6",
+        "0_7"
+      ],
+      "requiredGroups": [
+        [
+          "3_2"
+        ],
+        [
+          "7_6"
+        ],
+        [
+          "0_7"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "도시적인",
+        "몽환적인",
+        "향수 어린"
+      ],
+      "imageType": "pinterest",
+      "description": "밤의 거리를 기록한 사진",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-772156298635309437",
+      "pinId": "772156298635309437",
+      "title": "나무와 따뜻한 조명이 감싸는 침실",
+      "query": "cozy forest view bedroom warm lighting",
+      "kind": "atmosphere",
+      "options": [
+        "2_2",
+        "2_3",
+        "8_0",
+        "7_0",
+        "6_1"
+      ],
+      "requiredGroups": [
+        [
+          "2_2"
+        ],
+        [
+          "2_3"
+        ],
+        [
+          "8_0"
+        ],
+        [
+          "7_0"
+        ],
+        [
+          "6_1"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "따뜻한",
+        "고요한",
+        "몽환적인"
+      ],
+      "imageType": "pinterest",
+      "description": "나무와 따뜻한 조명이 감싸는 침실",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-301107925085687100",
+      "pinId": "301107925085687100",
+      "title": "재즈가 흐르는 깊은 빛의 공간",
+      "query": "jazz bar interior",
+      "kind": "space",
+      "options": [
+        "8_0",
+        "6_1",
+        "5_3"
+      ],
+      "requiredGroups": [
+        [
+          "8_0"
+        ],
+        [
+          "6_1"
+        ],
+        [
+          "5_3"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "따뜻한",
+        "향수 어린",
+        "도시적인"
+      ],
+      "imageType": "pinterest",
+      "description": "재즈가 흐르는 깊은 빛의 공간",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-7599893116187101",
+      "pinId": "7599893116187101",
+      "title": "안개와 산의 겹쳐진 윤곽",
+      "query": "misty mountain forest landscape",
+      "kind": "scenery",
+      "options": [
+        "2_1",
+        "2_4",
+        "6_7"
+      ],
+      "requiredGroups": [
+        [
+          "2_1"
+        ],
+        [
+          "2_4"
+        ],
+        [
+          "6_7"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "자연적인",
+        "몽환적인",
+        "고요한"
+      ],
+      "imageType": "pinterest",
+      "description": "안개와 산의 겹쳐진 윤곽",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-320740804717739081",
+      "pinId": "320740804717739081",
+      "title": "빈티지와 네온이 만나는 공간",
+      "query": "vintage neon interior",
+      "kind": "space",
+      "options": [
+        "6_2",
+        "11_7",
+        "11_4"
+      ],
+      "requiredGroups": [
+        [
+          "6_2"
+        ],
+        [
+          "11_7"
+        ],
+        [
+          "11_4"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "선명한",
+        "도시적인",
+        "향수 어린"
+      ],
+      "imageType": "pinterest",
+      "description": "빈티지와 네온이 만나는 공간",
+      "avoid": [],
+      "version": 1
+    },
+    {
+      "id": "pin-137289488885472695",
+      "pinId": "137289488885472695",
+      "title": "여백과 햇빛으로 채운 실내",
+      "query": "minimal room sunlight shadows",
+      "kind": "atmosphere",
+      "options": [
+        "11_0",
+        "6_4",
+        "5_0",
+        "4_2"
+      ],
+      "requiredGroups": [
+        [
+          "11_0"
+        ],
+        [
+          "6_4"
+        ],
+        [
+          "5_0"
+        ],
+        [
+          "4_2"
+        ]
+      ],
+      "minGroups": 2,
+      "tags": [
+        "정갈한",
+        "자연적인",
+        "고요한"
+      ],
+      "imageType": "pinterest",
+      "description": "여백과 햇빛으로 채운 실내",
+      "avoid": [],
+      "version": 1
+    }
+  ]
+}
