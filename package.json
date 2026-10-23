@@ -1,10 +1,11 @@
 {
-  "name": "sites-worker-esm-starter",
+  "name": "moodid",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "bash scripts/build.sh",
     "validate": "node scripts/validate-artifact.mjs",
-    "dev": "node scripts/preview.mjs"
+    "dev": "node scripts/preview.mjs",
+    "check": "npm run build && npm run validate && node scripts/check-option-images.mjs && node scripts/check-result-engine.mjs && node scripts/check-result-db.mjs && node scripts/check-curiosity-cards.mjs && node scripts/check-grounded-explorations.mjs && node scripts/check-progressive-results.mjs && node scripts/check-resilience.mjs"
   }
 }

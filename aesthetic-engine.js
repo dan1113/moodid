@@ -29,15 +29,22 @@ function selectReferences(items,limit=6){const ranked=rankedReferences(items),ou
 function referenceCandidates(items){const picks=selectReferences(items);return [...picks,...rankedReferences(items).filter(r=>!picks.some(x=>x.id===r.id))].slice(0,24);}
 function referenceQuery(r,reason=''){return {referenceId:r.id,pinId:r.pinId||null,title:r.title,query:r.query,reason,image:r.image||null,imageType:r.imageType};}
 function normalizeExplorations(queries,items){
- const out=[],used=new Set(),allowed=items?new Set(referenceCandidates(items).map(r=>r.id)):null;
+ const out=[],used=new Set(),media=new Set(),allowed=items?new Set(referenceCandidates(items).map(r=>r.id)):null;
  for(const q of (Array.isArray(queries)?queries:[]).slice(0,6)){
  if(!q||typeof q.query!=='string'||typeof q.title!=='string')continue;
  const ref=RESULT_REFERENCES.find(r=>r.id===q.referenceId||(q.pinId&&r.pinId===q.pinId));if((q.referenceId||q.pinId)&&(!ref||(allowed&&!allowed.has(ref.id))))continue;
- if(ref&&(!allowed||allowed.has(ref.id))){if(used.has(ref.id))continue;used.add(ref.id);out.push(referenceQuery(ref,typeof q.reason==='string'?q.reason.slice(0,240):''));}
+ if(ref&&(!allowed||allowed.has(ref.id))){if(used.has(ref.id)||media.has(ref.pinId||ref.image))continue;used.add(ref.id);media.add(ref.pinId||ref.image);out.push(referenceQuery(ref,typeof q.reason==='string'?q.reason.slice(0,240):referenceReason(ref,items||[])));}
  else out.push({pinId:null,title:q.title.slice(0,100),query:q.query.slice(0,200),reason:'',image:null,imageType:null});
  }
- if(items)for(const r of selectReferences(items)){if(out.length>=6)break;if(!used.has(r.id)){out.push(referenceQuery(r));used.add(r.id);}}
+ if(items)for(const r of selectReferences(items)){if(out.length>=6)break;if(!used.has(r.id)&&!media.has(r.pinId||r.image)){out.push(referenceQuery(r,referenceReason(r,items)));used.add(r.id);media.add(r.pinId||r.image);}}
  return out;
 }
-function fallbackExplorations(items){return selectReferences(items).map(r=>referenceQuery(r));}
+function fallbackExplorations(items){return selectReferences(items).map(r=>referenceQuery(r,referenceReason(r,items)));}
 function matchCuriosityPins(queries){return queries.map(q=>PIN_CATALOG.find(p=>p.id===q.pinId)||null);}
+
+function cleanAnswers(value){const out={};for(let i=0;i<DB.length;i++){const choices=Array.isArray(value?.[i])?value[i]:[];out[i]=[...new Set(choices.filter(id=>DB[i].options.some(o=>o.id===id)))].slice(0,3);}return out;}
+function completeAnswers(value){const a=cleanAnswers(value);return DB.every((d,i)=>a[i].length>0);}
+function validInterpretation(r){return !!r&&['name','english','description'].every(k=>typeof r[k]==='string'&&r[k].trim().length>0)&&Array.isArray(r.keywords)&&r.keywords.every(x=>typeof x==='string')&&Array.isArray(r.queries);}
+function databaseProfile(items){const by=c=>items.filter(o=>o.category===c),pick=c=>by(c).map(o=>o.name).join(' · ');const time=by('시간')[0],place=by('장소')[0],light=by('빛')[0],weather=by('날씨')[0];return {name:`${time.name}, ${place.name}에 머무는 빛`,english:`${time.en} / ${place.en}`.toUpperCase(),description:`${pick('계절')}의 ${pick('날씨')}, ${pick('장소')}에 ${pick('빛')}을 겹쳐보세요. ${pick('색상')}와 ${pick('색조')}가 시각적 바탕을 만들고, ${pick('음악')}의 리듬과 ${pick('향')}의 잔향이 더해집니다. 선택한 감각들이 서로 다른 역할로 하나의 장면을 이룹니다.`};}
+
+function referenceReason(r,items){const matched=items.filter(o=>r.options.includes(o.id)).map(o=>o.name).slice(0,3);return matched.length?matched.join(' · ')+' 선택에서 이어지는 탐색 제안이에요.':'';}
