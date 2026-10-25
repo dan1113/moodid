@@ -7,6 +7,19 @@ const analysisCache=new Map(),requestWindows=new Map();let activeAnalyses=0;
 const reply=(v,status=200)=>Response.json(v,{status,headers:{'cache-control':'no-store'}});
 export default {async fetch(req,env){const url=new URL(req.url);
 if(url.pathname.startsWith('/assets/options/')){const file=url.pathname.split('/').pop();const bytes=ASSETS[file];if(!bytes)return new Response('Not found',{status:404});return new Response(Uint8Array.from(atob(bytes),c=>c.charCodeAt(0)),{headers:{'content-type':'image/webp','cache-control':'public, max-age=31536000, immutable','x-content-type-options':'nosniff'}});}
+if(url.pathname==='/api/stats'){
+ if(!['GET','POST'].includes(req.method))return reply({error:'Method not allowed'},405);
+ if(!env.MOODID_COUNTER)return reply({available:false},503);
+ if(req.method==='POST'){
+  if(req.headers.get('origin')!==url.origin)return reply({error:'Forbidden'},403);
+  try{const raw=await req.text();if(raw.length>5000)return reply({error:'Too large'},413);const body=JSON.parse(raw);
+   if(!/^[a-f0-9-]{36}$/.test(body.visitorId||'')||!DB.every((d,i)=>Array.isArray(body.answers?.[i])&&body.answers[i].length>=1&&body.answers[i].length<=3&&new Set(body.answers[i]).size===body.answers[i].length&&body.answers[i].every(id=>d.options.some(o=>o.id===id))))return reply({error:'Invalid completion'},400);
+   const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(body.visitorId)))).map(b=>b.toString(16).padStart(2,'0')).join('');
+   return await env.MOODID_COUNTER.get(env.MOODID_COUNTER.idFromName('completed-browsers-v1')).fetch('https://counter/complete',{method:'POST',body:JSON.stringify({hash})});
+  }catch{return reply({available:false},503)}
+ }
+ try{return await env.MOODID_COUNTER.get(env.MOODID_COUNTER.idFromName('completed-browsers-v1')).fetch('https://counter/count')}catch{return reply({available:false},503)}
+}
 if(url.pathname==='/api/analyze'){
  if(req.method!=='POST')return reply({error:'Method not allowed'},405);
  if(req.headers.get('origin')&&req.headers.get('origin')!==url.origin)return reply({error:'허용되지 않은 요청입니다.'},403);
@@ -23,7 +36,7 @@ if(url.pathname==='/api/analyze'){
  let model=configured||'gemini-3.8-flash',res,upstreamError;
  const apiKey=String(env.GEMINI_API_KEY).trim();
  if(!apiKey)return reply({error:'Cloudflare 프로덕션의 GEMINI_API_KEY 값을 확인해주세요.',code:'API_KEY_MISSING'},503);
- const callModel=async(name,withThinking=true)=>{
+ const callModel=async(name,withThinking=false)=>{
   const generationConfig={responseMimeType:'application/json',temperature:.75,maxOutputTokens:6000};
   if(withThinking)generationConfig.thinkingConfig={thinkingLevel:'low'};
   const response=await fetch('https://generativelanguage.googleapis.com/v1beta/models/'+name+':generateContent',{method:'POST',headers:{'content-type':'application/json','x-goog-api-key':apiKey},body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig}),signal:AbortSignal.timeout(25000)});
@@ -44,7 +57,7 @@ if(url.pathname==='/api/analyze'){
   else if(status===403){code='GEMINI_PERMISSION_DENIED';error='Gemini 접근 권한이 거부됐어요. API 키의 API 제한·웹사이트 제한과 프로젝트 이용 권한을 확인해주세요. 이 서비스는 브라우저가 아닌 Worker 서버에서 Gemini를 호출합니다.';}
   else if(status===404){code='MODEL_NOT_FOUND';error='이 프로젝트에서 사용할 Gemini 모델을 찾지 못했어요. AI Studio에서 사용 가능한 모델 ID를 GEMINI_MODEL에 설정해주세요.';}
   else if(status===429){code='GEMINI_RATE_LIMIT';error='Gemini 사용량 한도에 도달했어요. 잠시 기다리거나 AI Studio에서 프로젝트 한도를 확인해주세요.';}
-  else if(status===400){code='GEMINI_INVALID_REQUEST';error='Gemini가 모델 또는 요청 설정을 거부했어요. 서버 로그의 진단 코드를 확인해주세요.';}
+  else if(status===400){code='GEMINI_INVALID_REQUEST';const safe=message.split(apiKey).join('[redacted]').replace(/(?:AIza|AQ[.])[A-Za-z0-9_.-]{12,}/g,'[redacted]').replace(/https?:[^ ]+/g,'[url]').slice(0,240);error='Gemini 요청 설정 오류: '+(safe||'모델과 API 설정을 확인해주세요.');}
   const upstreamStatus=typeof upstreamError.status==='string'&&/^[A-Z_]+$/.test(upstreamError.status)?upstreamError.status:null;
   console.error(JSON.stringify({event:'gemini_analysis_failed',code,upstreamStatus,upstreamHttpStatus:status,model}));
   return reply({error,code,upstreamStatus,upstreamHttpStatus:status,model},status===429?429:502);
@@ -62,6 +75,19 @@ if(url.pathname==='/api/analyze'){
 }
 if(url.pathname!=='/')return new Response('Not found',{status:404});return new Response(PAGE,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'no-cache','x-content-type-options':'nosniff'}});
 }};
+
+export class MoodidCounter {
+ constructor(ctx){this.ctx=ctx;this.sql=ctx.storage.sql;this.sql.exec('CREATE TABLE IF NOT EXISTS completed (id TEXT PRIMARY KEY)');this.sql.exec('CREATE TABLE IF NOT EXISTS totals (id INTEGER PRIMARY KEY, count INTEGER NOT NULL)');this.sql.exec('INSERT OR IGNORE INTO totals (id,count) VALUES (1,0)');}
+ async fetch(req){
+  if(req.method==='POST'){
+   const {hash}=await req.json();if(!/^[a-f0-9]{64}$/.test(hash||''))return Response.json({error:'Invalid id'},{status:400});
+   this.ctx.storage.transactionSync(()=>{const added=this.sql.exec('INSERT OR IGNORE INTO completed (id) VALUES (?) RETURNING id',hash).toArray();if(added.length)this.sql.exec('UPDATE totals SET count=count+1 WHERE id=1');});
+  }
+  const count=this.sql.exec('SELECT count FROM totals WHERE id=1').one().count;
+  return Response.json({available:true,count,unit:'unique_browser',since:'deployment'},{headers:{'cache-control':'no-store'}});
+ }
+}
+
 '''
 assets={f.name:base64.b64encode(f.read_bytes()).decode() for f in (p/'assets/options').glob('*.webp')}
 (p/'worker/index.js').write_text('const ASSETS='+json.dumps(assets)+';\n'+'const RESULT_REFERENCES='+json.dumps(json.loads((p/'result-reference-db.json').read_text())['references'],ensure_ascii=False)+';\n'+'const DB='+ (p/'database.json').read_text()+';\nconst PIN_CATALOG='+(p/'pinterest-catalog.json').read_text()+';\nconst DISCOVERIES='+(p/'discoveries.json').read_text()+';\n'+(p/'aesthetic-engine.js').read_text()+'\nconst PAGE='+json.dumps(page,ensure_ascii=False)+';\n'+server)
