@@ -1,4 +1,4 @@
-function itemsFor(a){return DB.flatMap((d,i)=>d.options.filter(o=>(a?.[i]||[]).includes(o.id)).map(o=>({...o,category:d.label})));}
+function itemsFor(a){const ids=new Set(Object.values(a||{}).filter(Array.isArray).flat());return DB.flatMap(d=>d.options.filter(o=>ids.has(o.id)).map(o=>({...o,category:d.label})));}
 function mixColor(a,b,t){return '#'+a.slice(1).match(/../g).map((v,i)=>Math.round(parseInt(v,16)*(1-t)+parseInt(b.slice(1+i*2,3+i*2),16)*t).toString(16).padStart(2,'0')).join('');}
 function buildPalette(items){
  const selected=items.filter(x=>x.category==='색상').map(x=>x.color);const ids=new Set(items.map(x=>x.id));
@@ -9,7 +9,7 @@ function buildPalette(items){
  const colorItems=items.filter(x=>x.category==='색상');const names=[...colorItems.map(x=>x.name),'날씨의 공기감','계절과 빛의 온도','빛의 포인트','부드러운 여백'];const candidates=colors.map((hex,i)=>({hex,name:names[i]||'부드러운 여백'}));const unique=candidates.filter((c,i)=>candidates.findIndex(x=>x.hex.toLowerCase()===c.hex.toLowerCase())===i);for(const t of [.2,.4,.6,.8]){const hex=mixColor(base,'#F3EFE5',t);if(unique.length<5&&!unique.some(x=>x.hex===hex))unique.push({hex,name:'부드러운 여백'});}
  return unique.slice(0,5);
 }
-const senseRoles={시간:'장면의 리듬과 빛이 머무는 시간을 정해요.',계절:'공기와 색의 바탕이 되는 계절감을 더해요.',날씨:'장면을 감싸는 대기와 대비를 만들어요.',장소:'좋아하는 감각이 머물 공간의 배경이에요.',색상:'세계의 중심이 되는 시각 언어예요.',색조:'같은 색에서도 선명함과 깊이를 조절해요.',빛:'장면의 온도와 윤곽을 드러내요.',소리:'보이는 풍경에 움직임과 공간감을 더해요.',음악:'장면에 흐를 리듬과 청각적 질감을 더해요.',향:'눈에 보이지 않는 공기의 인상을 완성해요.',질감:'손끝에 느껴질 소재의 표정을 더해요.',공간:'선택한 감각을 배치하는 방식과 여백이에요.'};
+const senseRoles={시간:'장면의 리듬과 빛이 머무는 시간을 정해요.',계절:'공기와 색의 바탕이 되는 계절감을 더해요.',날씨:'장면을 감싸는 대기와 대비를 만들어요.',장소:'좋아하는 감각이 머물 공간의 배경이에요.',색상:'세계의 중심이 되는 시각 언어예요.',색조:'같은 색에서도 선명함과 깊이를 조절해요.',빛:'장면의 온도와 윤곽을 드러내요.',소리:'보이는 풍경에 움직임과 공간감을 더해요.',향:'눈에 보이지 않는 공기의 인상을 완성해요.',질감:'손끝에 느껴질 소재의 표정을 더해요.',공간:'선택한 감각을 배치하는 방식과 여백이에요.'};
 function buildDNA(items,roles=[]){return DB.map(d=>({category:d.label,en:d.en,choices:items.filter(x=>x.category===d.label),role:roles.find(x=>x.category===d.label)?.role||senseRoles[d.label]}));}
 function rankCatalog(catalog,items,feedback={}){const ids=new Set(items.map(x=>x.id)),tags={};items.forEach(o=>Object.entries(o.tags).forEach(([t,v])=>tags[t]=(tags[t]||0)+v));return catalog.filter(c=>!c.requiredGroups||eligibleReference(c,items)).map(c=>({...c,score:c.tags.reduce((n,t)=>n+(tags[t]||0),0)+c.options.filter(id=>ids.has(id)).length*4+(feedback[c.id]===1?6:feedback[c.id]===-1?-20:0)})).sort((a,b)=>b.score-a.score);}
 function matchPins(items){const eligible=new Set(rankedReferences(items).filter(r=>r.pinId).map(r=>r.pinId)),ranked=rankCatalog(PIN_CATALOG,items).filter(p=>eligible.has(p.id)),out=[];for(const kind of ['atmosphere','space','scenery']){const pick=ranked.find(p=>p.kind===kind);if(pick)out.push(pick)}for(const p of ranked){if(out.length>=3)break;if(!out.some(x=>x.id===p.id))out.push(p)}return out;}
@@ -19,7 +19,7 @@ function recommendationReason(d,items){const matched=items.filter(x=>d.options.i
 function synthesizeSenses(items){
  const pick=c=>items.filter(x=>x.category===c).map(x=>x.name).slice(0,2).join(' · '),weights={};items.forEach(o=>Object.entries(o.tags).forEach(([k,v])=>weights[k]=(weights[k]||0)+v));
  const nouns={'고요한':'고요함','따뜻한':'온기','몽환적인':'몽환성','향수 어린':'시간의 깊이','자연적인':'자연의 결','도시적인':'도시의 리듬','정갈한':'정돈된 여백','선명한':'선명한 생동감'},top=Object.keys(weights).sort((a,b)=>weights[b]-weights[a]).slice(0,2);
- return {title:top.map(t=>nouns[t]||t).join(' · ')+'의 어우러짐',text:`선택한 감각 전반에는 ‘${top.map(t=>nouns[t]||t).join(' · ')}’이라는 결이 흐릅니다. ‘${pick('날씨')}’의 공기, ‘${pick('빛')}’에서 느껴지는 빛, ‘${pick('질감')}’의 표면이 하나의 장면에 겹쳐져요. ‘${pick('음악')}’의 리듬과 ‘${pick('향')}’의 잔향이 더해지면, 눈에 보이는 색과 손끝의 촉감, 공간의 분위기가 따로 떨어지지 않고 하나의 세계로 느껴집니다.`};
+ return {title:top.map(t=>nouns[t]||t).join(' · ')+'의 어우러짐',text:`선택한 감각 전반에는 ‘${top.map(t=>nouns[t]||t).join(' · ')}’이라는 결이 흐릅니다. ‘${pick('날씨')}’의 공기, ‘${pick('빛')}’에서 느껴지는 빛, ‘${pick('질감')}’의 표면이 하나의 장면에 겹쳐져요. ‘${pick('소리')}’의 공간감과 ‘${pick('향')}’의 잔향이 더해지면, 눈에 보이는 색과 손끝의 촉감, 공간의 분위기가 따로 떨어지지 않고 하나의 세계로 느껴집니다.`};
 }
 function eligibleReference(r,items){const ids=new Set(items.map(x=>x.id));const categories=new Set((r.options||[]).filter(id=>ids.has(id)).map(id=>id.split('_')[0]));return categories.size>=(r.minGroups>1?2:1)&&!(r.avoid||[]).some(id=>ids.has(id))&&(r.requiredGroups||[]).filter(g=>g.some(id=>ids.has(id))).length>=(r.minGroups||1);}
 function rankedReferences(items){
@@ -42,9 +42,13 @@ function normalizeExplorations(queries,items){
 function fallbackExplorations(items){return selectReferences(items).map(r=>referenceQuery(r,referenceReason(r,items)));}
 function matchCuriosityPins(queries){return queries.map(q=>PIN_CATALOG.find(p=>p.id===q.pinId)||null);}
 
-function cleanAnswers(value){const out={};for(let i=0;i<DB.length;i++){const choices=Array.isArray(value?.[i])?value[i]:[];out[i]=[...new Set(choices.filter(id=>DB[i].options.some(o=>o.id===id)))].slice(0,3);}return out;}
+function cleanAnswers(value){const out={};for(let i=0;i<DB.length;i++){const choices=Object.values(value||{}).filter(Array.isArray).flat();out[i]=[...new Set(choices.filter(id=>DB[i].options.some(o=>o.id===id)))].slice(0,3);}return out;}
 function completeAnswers(value){const a=cleanAnswers(value);return DB.every((d,i)=>a[i].length>0);}
-function validInterpretation(r){return !!r&&['name','english','description'].every(k=>typeof r[k]==='string'&&r[k].trim().length>0)&&Array.isArray(r.keywords)&&r.keywords.every(x=>typeof x==='string')&&Array.isArray(r.queries);}
-function databaseProfile(items){const by=c=>items.filter(o=>o.category===c),pick=c=>by(c).map(o=>o.name).join(' · ');const time=by('시간')[0],place=by('장소')[0],light=by('빛')[0],weather=by('날씨')[0];return {name:`${time.name}, ${place.name}에 머무는 빛`,english:`${time.en} / ${place.en}`.toUpperCase(),description:`${pick('계절')}의 ${pick('날씨')}, ${pick('장소')}에 ${pick('빛')}을 겹쳐보세요. ${pick('색상')}와 ${pick('색조')}가 시각적 바탕을 만들고, ${pick('음악')}의 리듬과 ${pick('향')}의 잔향이 더해집니다. 선택한 감각들이 서로 다른 역할로 하나의 장면을 이룹니다.`};}
+function validInterpretation(r){return !!r&&!hasMusicContent(r)&&['name','english','description'].every(k=>typeof r[k]==='string'&&r[k].trim().length>0)&&Array.isArray(r.keywords)&&r.keywords.every(x=>typeof x==='string')&&Array.isArray(r.queries);}
+function databaseProfile(items){const by=c=>items.filter(o=>o.category===c),pick=c=>by(c).map(o=>o.name).join(' · ');const time=by('시간')[0],place=by('장소')[0],light=by('빛')[0],weather=by('날씨')[0];return {name:`${time.name}, ${place.name}에 머무는 빛`,english:`${time.en} / ${place.en}`.toUpperCase(),description:`${pick('계절')}의 ${pick('날씨')}, ${pick('장소')}에 ${pick('빛')}을 겹쳐보세요. ${pick('색상')}와 ${pick('색조')}가 시각적 바탕을 만들고, ${pick('소리')}의 공간감과 ${pick('향')}의 잔향이 더해집니다. 선택한 감각들이 서로 다른 역할로 하나의 장면을 이룹니다.`};}
 
 function referenceReason(r,items){const matched=items.filter(o=>r.options.includes(o.id)).map(o=>o.name).slice(0,3);return matched.length?matched.join(' · ')+' 선택에서 이어지는 탐색 제안이에요.':'';}
+
+function migrateProfile(r){if(!r||!completeAnswers(r.answers))return null;const answers=cleanAnswers(r.answers),items=itemsFor(answers);return r.schemaVersion===5?{...r,answers,pending:false}:{...r,...fallback(items),answers,pending:false,ai:false,sample:false,schemaVersion:5};}
+
+function hasMusicContent(r){const fields=[r?.name,r?.english,r?.description,...(Array.isArray(r?.keywords)?r.keywords:[]),r?.sensorySynthesis?.title,r?.sensorySynthesis?.text,r?.connection?.title,r?.connection?.text,...(Array.isArray(r?.queries)?r.queries.flatMap(q=>[q?.title,q?.query,q?.reason]):[]),...(Array.isArray(r?.senseRoles)?r.senseRoles.map(d=>d?.role):[])];return fields.some(t=>typeof t==='string'&&/음악|재즈|클래식|어쿠스틱|로파이|드림팝|플레이리스트|일렉트로닉|\b(?:music|jazz|classical|acoustic|lofi|playlist|dream pop|electronic)\b/i.test(t));}

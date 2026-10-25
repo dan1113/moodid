@@ -9,16 +9,12 @@
       "고요한"
     ],
     "options": [
-      "8_0",
       "11_1",
       "6_1"
     ],
     "query": "Japanese kissaten vintage coffee interior",
     "image": "11_1",
     "requiredGroups": [
-      [
-        "8_0"
-      ],
       [
         "11_1"
       ],
@@ -138,8 +134,7 @@
     ],
     "options": [
       "6_2",
-      "0_7",
-      "8_6"
+      "0_7"
     ],
     "query": "neon noir rainy city night photography",
     "image": "6_2",
@@ -149,9 +144,6 @@
       ],
       [
         "0_7"
-      ],
-      [
-        "8_6"
       ]
     ],
     "minGroups": 1
@@ -168,8 +160,7 @@
     "options": [
       "3_5",
       "9_0",
-      "10_5",
-      "8_7"
+      "10_5"
     ],
     "query": "quiet cottage wildflower wood countryside aesthetic",
     "image": "3_5",
@@ -182,9 +173,6 @@
       ],
       [
         "10_5"
-      ],
-      [
-        "8_7"
       ]
     ],
     "minGroups": 1
@@ -201,8 +189,7 @@
     "options": [
       "11_5",
       "10_2",
-      "10_6",
-      "8_2"
+      "10_6"
     ],
     "query": "soft futurism chrome glass ambient interior",
     "image": "11_5",
@@ -215,9 +202,6 @@
       ],
       [
         "10_6"
-      ],
-      [
-        "8_2"
       ]
     ],
     "minGroups": 1
@@ -528,34 +512,6 @@
     "minGroups": 2
   },
   {
-    "id": "lavenderdream",
-    "name": "라벤더빛 몽환의 장면",
-    "ko": "라벤더 · 몽환적인 드림팝 · 파스텔의 감각을 연결하는 탐색 제안",
-    "tags": [
-      "몽환적인",
-      "고요한"
-    ],
-    "options": [
-      "4_6",
-      "8_5",
-      "5_0"
-    ],
-    "query": "lavender dream pop ethereal moodboard",
-    "image": "4_6",
-    "requiredGroups": [
-      [
-        "4_6"
-      ],
-      [
-        "8_5"
-      ],
-      [
-        "5_0"
-      ]
-    ],
-    "minGroups": 2
-  },
-  {
     "id": "chromeambient",
     "name": "금속과 앰비언트의 공간",
     "ko": "차가운 금속 · 반짝이는 퓨처리즘 · 공간을 채우는 앰비언트의 감각을 연결하는 탐색 제안",
@@ -567,8 +523,7 @@
     ],
     "options": [
       "10_6",
-      "11_5",
-      "8_2"
+      "11_5"
     ],
     "query": "chrome futuristic ambient light interior",
     "image": "11_5",
@@ -578,9 +533,6 @@
       ],
       [
         "11_5"
-      ],
-      [
-        "8_2"
       ]
     ],
     "minGroups": 2
@@ -731,34 +683,6 @@
       ],
       [
         "7_2"
-      ]
-    ],
-    "minGroups": 2
-  },
-  {
-    "id": "kissatenroom",
-    "name": "재즈와 빈티지의 느린 시간",
-    "ko": "느긋한 재즈 · 시간이 쌓인 빈티지 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
-    "tags": [
-      "따뜻한",
-      "향수 어린"
-    ],
-    "options": [
-      "8_0",
-      "11_1",
-      "6_1"
-    ],
-    "query": "japanese kissaten jazz vintage interior",
-    "image": "11_1",
-    "requiredGroups": [
-      [
-        "8_0"
-      ],
-      [
-        "11_1"
-      ],
-      [
-        "6_1"
       ]
     ],
     "minGroups": 2
@@ -1151,34 +1075,6 @@
       ],
       [
         "6_1"
-      ]
-    ],
-    "minGroups": 2
-  },
-  {
-    "id": "fadedindie",
-    "name": "빛바랜 색과 인디의 장면",
-    "ko": "빛바랜 색 · 담백한 인디 · 오래된 골목의 감각을 연결하는 탐색 제안",
-    "tags": [
-      "향수 어린",
-      "따뜻한"
-    ],
-    "options": [
-      "5_5",
-      "8_1",
-      "3_2"
-    ],
-    "query": "faded analog indie photography moodboard",
-    "image": "5_5",
-    "requiredGroups": [
-      [
-        "5_5"
-      ],
-      [
-        "8_1"
-      ],
-      [
-        "3_2"
       ]
     ],
     "minGroups": 2

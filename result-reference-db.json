@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 5,
   "references": [
     {
       "id": "sense-0_0",
@@ -1474,190 +1474,6 @@
       "version": 1
     },
     {
-      "id": "sense-8_0",
-      "title": "느긋한 재즈 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_0"
-      ],
-      "requiredGroups": [
-        [
-          "8_0"
-        ]
-      ],
-      "tags": [
-        "따뜻한",
-        "향수 어린"
-      ],
-      "query": "jazz listening room interior",
-      "image": "8_0",
-      "imageType": "generated",
-      "description": "선택한 느긋한 재즈에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "sense-8_1",
-      "title": "담백한 인디 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_1"
-      ],
-      "requiredGroups": [
-        [
-          "8_1"
-        ]
-      ],
-      "tags": [
-        "향수 어린",
-        "따뜻한"
-      ],
-      "query": "indie listening room interior",
-      "image": "8_1",
-      "imageType": "generated",
-      "description": "선택한 담백한 인디에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "sense-8_2",
-      "title": "공간을 채우는 앰비언트 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_2"
-      ],
-      "requiredGroups": [
-        [
-          "8_2"
-        ]
-      ],
-      "tags": [
-        "몽환적인",
-        "고요한"
-      ],
-      "query": "ambient listening room interior",
-      "image": "8_2",
-      "imageType": "generated",
-      "description": "선택한 공간을 채우는 앰비언트에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "sense-8_3",
-      "title": "피아노 클래식 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_3"
-      ],
-      "requiredGroups": [
-        [
-          "8_3"
-        ]
-      ],
-      "tags": [
-        "정갈한",
-        "고요한"
-      ],
-      "query": "classical piano listening room interior",
-      "image": "8_3",
-      "imageType": "generated",
-      "description": "선택한 피아노 클래식에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "sense-8_4",
-      "title": "로파이 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_4"
-      ],
-      "requiredGroups": [
-        [
-          "8_4"
-        ]
-      ],
-      "tags": [
-        "고요한",
-        "몽환적인"
-      ],
-      "query": "lofi listening room interior",
-      "image": "8_4",
-      "imageType": "generated",
-      "description": "선택한 로파이에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "sense-8_5",
-      "title": "몽환적인 드림팝 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_5"
-      ],
-      "requiredGroups": [
-        [
-          "8_5"
-        ]
-      ],
-      "tags": [
-        "몽환적인",
-        "고요한"
-      ],
-      "query": "dream pop listening room interior",
-      "image": "8_5",
-      "imageType": "generated",
-      "description": "선택한 몽환적인 드림팝에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "sense-8_6",
-      "title": "일렉트로닉 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_6"
-      ],
-      "requiredGroups": [
-        [
-          "8_6"
-        ]
-      ],
-      "tags": [
-        "선명한",
-        "도시적인"
-      ],
-      "query": "electronic listening room interior",
-      "image": "8_6",
-      "imageType": "generated",
-      "description": "선택한 일렉트로닉에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "sense-8_7",
-      "title": "어쿠스틱 — 음악 레퍼런스",
-      "kind": "music",
-      "options": [
-        "8_7"
-      ],
-      "requiredGroups": [
-        [
-          "8_7"
-        ]
-      ],
-      "tags": [
-        "자연적인",
-        "정갈한"
-      ],
-      "query": "acoustic listening room interior",
-      "image": "8_7",
-      "imageType": "generated",
-      "description": "선택한 어쿠스틱에서 출발하는 음악 중심의 시각 탐색",
-      "avoid": [],
-      "version": 1
-    },
-    {
       "id": "sense-9_0",
       "title": "마른 나무 우디 — 향 레퍼런스",
       "kind": "scent",
@@ -2518,38 +2334,6 @@
       "version": 1
     },
     {
-      "id": "lavenderdream",
-      "title": "라벤더빛 몽환의 장면",
-      "query": "lavender dream pop ethereal moodboard",
-      "kind": "color",
-      "image": "4_6",
-      "imageType": "generated",
-      "options": [
-        "4_6",
-        "8_5",
-        "5_0"
-      ],
-      "requiredGroups": [
-        [
-          "4_6"
-        ],
-        [
-          "8_5"
-        ],
-        [
-          "5_0"
-        ]
-      ],
-      "minGroups": 2,
-      "tags": [
-        "몽환적인",
-        "고요한"
-      ],
-      "description": "라벤더 · 몽환적인 드림팝 · 파스텔의 감각을 연결하는 탐색 제안",
-      "avoid": [],
-      "version": 1
-    },
-    {
       "id": "chromeambient",
       "title": "금속과 앰비언트의 공간",
       "query": "chrome futuristic ambient light interior",
@@ -2558,8 +2342,7 @@
       "imageType": "generated",
       "options": [
         "10_6",
-        "11_5",
-        "8_2"
+        "11_5"
       ],
       "requiredGroups": [
         [
@@ -2567,9 +2350,6 @@
         ],
         [
           "11_5"
-        ],
-        [
-          "8_2"
         ]
       ],
       "minGroups": 2,
@@ -2750,38 +2530,6 @@
         "따뜻한"
       ],
       "description": "자정 · 지하철역 · 달리는 열차의 감각을 연결하는 탐색 제안",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "kissatenroom",
-      "title": "재즈와 빈티지의 느린 시간",
-      "query": "japanese kissaten jazz vintage interior",
-      "kind": "music",
-      "image": "11_1",
-      "imageType": "generated",
-      "options": [
-        "8_0",
-        "11_1",
-        "6_1"
-      ],
-      "requiredGroups": [
-        [
-          "8_0"
-        ],
-        [
-          "11_1"
-        ],
-        [
-          "6_1"
-        ]
-      ],
-      "minGroups": 2,
-      "tags": [
-        "따뜻한",
-        "향수 어린"
-      ],
-      "description": "느긋한 재즈 · 시간이 쌓인 빈티지 · 따뜻한 간접조명의 감각을 연결하는 탐색 제안",
       "avoid": [],
       "version": 1
     },
@@ -3230,38 +2978,6 @@
       "version": 1
     },
     {
-      "id": "fadedindie",
-      "title": "빛바랜 색과 인디의 장면",
-      "query": "faded analog indie photography moodboard",
-      "kind": "music",
-      "image": "5_5",
-      "imageType": "generated",
-      "options": [
-        "5_5",
-        "8_1",
-        "3_2"
-      ],
-      "requiredGroups": [
-        [
-          "5_5"
-        ],
-        [
-          "8_1"
-        ],
-        [
-          "3_2"
-        ]
-      ],
-      "minGroups": 2,
-      "tags": [
-        "향수 어린",
-        "따뜻한"
-      ],
-      "description": "빛바랜 색 · 담백한 인디 · 오래된 골목의 감각을 연결하는 탐색 제안",
-      "avoid": [],
-      "version": 1
-    },
-    {
       "id": "glasslight",
       "title": "유리를 통과하는 투명한 빛",
       "query": "translucent glass natural light still life",
@@ -3544,14 +3260,10 @@
       "query": "Japanese kissaten vintage cafe",
       "kind": "atmosphere",
       "options": [
-        "8_0",
         "11_1",
         "6_1"
       ],
       "requiredGroups": [
-        [
-          "8_0"
-        ],
         [
           "11_1"
         ],
@@ -3649,7 +3361,6 @@
       "options": [
         "2_2",
         "2_3",
-        "8_0",
         "7_0",
         "6_1"
       ],
@@ -3659,9 +3370,6 @@
         ],
         [
           "2_3"
-        ],
-        [
-          "8_0"
         ],
         [
           "7_0"
@@ -3678,39 +3386,6 @@
       ],
       "imageType": "pinterest",
       "description": "나무와 따뜻한 조명이 감싸는 침실",
-      "avoid": [],
-      "version": 1
-    },
-    {
-      "id": "pin-301107925085687100",
-      "pinId": "301107925085687100",
-      "title": "재즈가 흐르는 깊은 빛의 공간",
-      "query": "jazz bar interior",
-      "kind": "space",
-      "options": [
-        "8_0",
-        "6_1",
-        "5_3"
-      ],
-      "requiredGroups": [
-        [
-          "8_0"
-        ],
-        [
-          "6_1"
-        ],
-        [
-          "5_3"
-        ]
-      ],
-      "minGroups": 2,
-      "tags": [
-        "따뜻한",
-        "향수 어린",
-        "도시적인"
-      ],
-      "imageType": "pinterest",
-      "description": "재즈가 흐르는 깊은 빛의 공간",
       "avoid": [],
       "version": 1
     },
