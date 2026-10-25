@@ -51,7 +51,8 @@ if(url.pathname==='/api/analyze'){
  if(!res.ok){
   const status=res.status,message=String(upstreamError.message||''),reasons=(Array.isArray(upstreamError.details)?upstreamError.details:[]).map(d=>d?.reason||'').join(' ');
   let code='GEMINI_UPSTREAM_ERROR',error='Gemini 서버에서 분석 요청을 처리하지 못했어요. 잠시 뒤 다시 시도해주세요.';
-  if(/leaked|API key (?:was |is )?(?:reported as )?blocked/i.test(message)){code='API_KEY_BLOCKED';error='Gemini API 키가 유출 또는 차단된 키로 감지됐어요. AI Studio에서 새 키를 발급해 Cloudflare 비밀값을 교체해주세요.';}
+  if(/User location is not supported/i.test(message)){code='GEMINI_LOCATION_UNSUPPORTED';error='AI 서버의 지역을 Google이 지원하지 않는 것으로 판단했어요. 기본 결과는 사용할 수 있으며, 운영자의 서버 지역 확인이 필요합니다.';}
+  else if(/leaked|API key (?:was |is )?(?:reported as )?blocked/i.test(message)){code='API_KEY_BLOCKED';error='Gemini API 키가 유출 또는 차단된 키로 감지됐어요. AI Studio에서 새 키를 발급해 Cloudflare 비밀값을 교체해주세요.';}
   else if(/API_KEY_INVALID|API_KEY_EXPIRED/.test(reasons)||status===401||/API key not valid|invalid api key/i.test(message)){code='API_KEY_INVALID';error='Gemini API 키가 유효하지 않아요. Cloudflare 프로덕션 비밀값을 확인해주세요.';}
   else if(/BILLING|billing|payment|credit/i.test(reasons+' '+message)||status===402){code='BILLING_REQUIRED';error='Gemini 프로젝트의 결제 또는 크레딧 상태를 AI Studio에서 확인해주세요.';}
   else if(status===403){code='GEMINI_PERMISSION_DENIED';error='Gemini 접근 권한이 거부됐어요. API 키의 API 제한·웹사이트 제한과 프로젝트 이용 권한을 확인해주세요. 이 서비스는 브라우저가 아닌 Worker 서버에서 Gemini를 호출합니다.';}
