@@ -1,5 +1,21 @@
 {
   "name": "moodid",
   "main": "worker/index.js",
-  "compatibility_date": "2026-10-23"
+  "compatibility_date": "2026-10-23",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "MOODID_COUNTER",
+        "class_name": "MoodidCounter"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "moodid-counter-v1",
+      "new_sqlite_classes": [
+        "MoodidCounter"
+      ]
+    }
+  ]
 }
