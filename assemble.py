@@ -75,7 +75,7 @@ if(url.pathname==='/api/analyze'){
  }finally{activeAnalyses--}
  }catch(err){const timeout=err?.name==='TimeoutError'||err?.name==='AbortError';const code=timeout?'GEMINI_TIMEOUT':err instanceof SyntaxError?'GEMINI_INVALID_RESPONSE':'GEMINI_ANALYSIS_FAILED';console.error(JSON.stringify({event:'gemini_analysis_failed',code}));return reply({error:timeout?'Gemini 응답 시간이 초과됐어요. 기본 결과는 그대로 볼 수 있어요.':code==='GEMINI_INVALID_RESPONSE'?'Gemini 응답 형식을 읽지 못했어요. 다시 시도해주세요.':'AI 분석을 완료하지 못했어요. 기본 결과는 유지됩니다. 다시 시도해주세요.',code},503)}
 }
-if(url.pathname!=='/')return new Response('Not found',{status:404});return new Response(PAGE,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'no-cache','x-content-type-options':'nosniff'}});
+if(url.pathname!=='/')return new Response('Not found',{status:404});return new Response(PAGE,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'no-store, no-cache, max-age=0, must-revalidate','cloudflare-cdn-cache-control':'no-store','cdn-cache-control':'no-store','pragma':'no-cache','expires':'0','x-content-type-options':'nosniff'}});
 }};
 
 export class MoodidCounter {
