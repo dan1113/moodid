@@ -1,5 +1,8 @@
 // Cloudflare Worker: semantic searches per palette color; credentials remain server-side.
-const imageSearchWindows=new Map();
+const imageSearchWindows=new Map(),imageMetadataCache=new Map();
+async function safeImageCacheRead(request){try{return await caches.default.match(request);}catch{return null;}}
+async function safeImageCacheWrite(request,response){try{await caches.default.put(request,response);}catch{}}
+
 const imageJson=(data,status=200)=>Response.json(data,{status,headers:{'cache-control':'no-store'}});
 const imageColorNames=[['#243b55','deep navy blue'],['#657b91','slate blue'],['#a9bfca','pale blue gray'],['#9c252c','deep warm red'],['#c75942','terracotta red'],['#c58d62','warm amber'],['#ddb766','golden beige'],['#e8dccb','warm ivory'],['#b5ac96','muted stone beige'],['#6c7150','muted olive green'],['#486345','forest green'],['#b4c3ac','sage green'],['#9c8ead','dusty lavender'],['#292d2c','charcoal'],['#eeeeea','soft white']];
 function colorRgb(c){return c.slice(1).match(/../g).map(x=>parseInt(x,16));}
@@ -33,8 +36,9 @@ async function imageSearchRoute(req,env,url){
   const raw=await req.text();if(raw.length>7000)return imageJson({error:'Too large'},413);let body;try{body=JSON.parse(raw)}catch{return imageJson({error:'Invalid JSON'},400)}
   const items=[];for(let i=0;i<DB.length;i++){const ids=body.answers?.[i];if(!Array.isArray(ids)||ids.length<1||ids.length>3||new Set(ids).size!==ids.length)return imageJson({error:'모든 감각을 선택해주세요.'},400);for(const id of ids){const o=DB[i].options.find(o=>o.id===id);if(!o)return imageJson({error:'Invalid choice'},400);items.push({...o,category:DB[i].label});}}
   const palette=buildPalette(items).map(c=>c.hex),plan=imageSearchPlan(items,palette);
-  const cacheId=await imageSignature(JSON.stringify(plan),key),cacheUrl=new Request(url.origin+'/__image-cache/'+cacheId),cached=await caches.default.match(cacheUrl);
+  const cacheId=await imageSignature(JSON.stringify(plan),key),cacheUrl=new Request(url.origin+'/__image-cache/'+cacheId),cached=await safeImageCacheRead(cacheUrl);
   if(cached)return cached;
+  const memory=imageMetadataCache.get(cacheId);if(memory&&Date.now()-memory.time<21600000)return Response.json(memory.data);
   const ip=req.headers.get('cf-connecting-ip')||'local',now=Date.now(),window=imageSearchWindows.get(ip);
   if(window&&now-window.time<60000&&window.count>=3)return imageJson({error:'이미지 검색 요청이 많아요. 1분 뒤 다시 시도해주세요.',code:'SEARCH_RATE_LIMIT'},429);
   if(imageSearchWindows.size>1000)imageSearchWindows.delete(imageSearchWindows.keys().next().value);
@@ -49,6 +53,6 @@ async function imageSearchRoute(req,env,url){
    }
    return {...slot,candidates};
   }));
-  const response=Response.json({groups,provider:'Google Images via SerpApi'},{headers:{'cache-control':'public,max-age=21600'}});await caches.default.put(cacheUrl,response.clone());return response;
- }catch(e){return imageJson({code:e.providerStatus===401?'SEARCH_AUTH_FAILED':'SEARCH_UNAVAILABLE',error:e.providerStatus===401?'이미지 검색 키를 확인해주세요.':'이미지 검색이 지연되고 있어요. 잠시 후 다시 시도해주세요.'},502)}
+  const response=Response.json({groups,provider:'Google Images via SerpApi'},{headers:{'cache-control':'public,max-age=21600'}});imageMetadataCache.set(cacheId,{time:Date.now(),data:{groups,provider:'Google Images via SerpApi'}});if(imageMetadataCache.size>150)imageMetadataCache.delete(imageMetadataCache.keys().next().value);await safeImageCacheWrite(cacheUrl,response.clone());return response;
+ }catch(e){console.error(JSON.stringify({event:'moodid_image_search_failed',name:e.name,providerStatus:e.providerStatus||null,reason:String(e.message||'').replace(/https?:[^ ]+/g,'[url]').slice(0,180)}));return imageJson({code:e.providerStatus===401?'SEARCH_AUTH_FAILED':'SEARCH_UNAVAILABLE',error:e.providerStatus===401?'이미지 검색 키를 확인해주세요.':'이미지 검색이 지연되고 있어요. 잠시 후 다시 시도해주세요.'},502)}
 }
