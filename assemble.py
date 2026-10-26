@@ -7,6 +7,7 @@ const analysisCache=new Map(),requestWindows=new Map();let activeAnalyses=0;
 const reply=(v,status=200)=>Response.json(v,{status,headers:{'cache-control':'no-store'}});
 export default {async fetch(req,env){const url=new URL(req.url);
 if(url.pathname.startsWith('/assets/options/')){const file=url.pathname.split('/').pop();const bytes=ASSETS[file];if(!bytes)return new Response('Not found',{status:404});return new Response(Uint8Array.from(atob(bytes),c=>c.charCodeAt(0)),{headers:{'content-type':'image/webp','cache-control':'public, max-age=31536000, immutable','x-content-type-options':'nosniff'}});}
+if(url.pathname==='/api/image-search'||url.pathname==='/api/reference-image')return imageSearchRoute(req,env,url);
 if(url.pathname==='/api/stats'){
  if(!['GET','POST'].includes(req.method))return reply({error:'Method not allowed'},405);
  if(!env.MOODID_COUNTER)return reply({available:false},503);
@@ -91,4 +92,4 @@ export class MoodidCounter {
 
 '''
 assets={f.name:base64.b64encode(f.read_bytes()).decode() for f in (p/'assets/options').glob('*.webp')}
-(p/'worker/index.js').write_text('const ASSETS='+json.dumps(assets)+';\n'+'const RESULT_REFERENCES='+json.dumps(json.loads((p/'result-reference-db.json').read_text())['references'],ensure_ascii=False)+';\n'+'const DB='+ (p/'database.json').read_text()+';\nconst PIN_CATALOG='+(p/'pinterest-catalog.json').read_text()+';\nconst DISCOVERIES='+(p/'discoveries.json').read_text()+';\n'+(p/'aesthetic-engine.js').read_text()+'\nconst PAGE='+json.dumps(page,ensure_ascii=False)+';\n'+server)
+(p/'worker/index.js').write_text('const ASSETS='+json.dumps(assets)+';\n'+'const RESULT_REFERENCES='+json.dumps(json.loads((p/'result-reference-db.json').read_text())['references'],ensure_ascii=False)+';\n'+'const DB='+ (p/'database.json').read_text()+';\nconst PIN_CATALOG='+(p/'pinterest-catalog.json').read_text()+';\nconst DISCOVERIES='+(p/'discoveries.json').read_text()+';\n'+(p/'aesthetic-engine.js').read_text()+'\n'+(p/'image-search-worker.js').read_text()+'\nconst PAGE='+json.dumps(page,ensure_ascii=False)+';\n'+server)
